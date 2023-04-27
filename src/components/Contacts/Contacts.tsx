@@ -3,7 +3,7 @@ import "../../styles/main.scss"
 
 const Contacts: React.FC = () => {
    return (
-      <div>
+      <div className="contacts-container">
          <h2>Contacts</h2>
          <p>Text me!</p>
       </div>
