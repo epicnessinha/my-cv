@@ -36,7 +36,7 @@ const Contacts: React.FC = () => {
            </div>
          </div>
        </div>
-       <h3>Send me a message:</h3>
+       <h3 className="send-me">Send me a message:</h3>
       <ContactForm />
      </div>
    );
