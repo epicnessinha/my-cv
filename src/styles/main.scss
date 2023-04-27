@@ -1,0 +1,29 @@
+:root {
+    --color-background-light: #ffffff;
+    --color-background-dark: #222222;
+    --color-text-light: #000000;
+    --color-text-dark: #dddddd;
+ }
+ 
+ .dark {
+    background-color: var(--color-background-dark);
+    color: var(--color-text-dark);
+ }
+ 
+ .header,
+ .footer {
+    background-color: var(--color-background-light);
+    color: var(--color-text-light);
+ }
+ 
+ .header.dark,
+ .footer.dark {
+    background-color: var(--color-background-dark);
+   color: var(--color-text-dark);
+}
+
+.dark {
+    background-color: #333; // or any other desired dark background color
+    color: #fff; // or any other desired text color for dark mode
+  }
+  
