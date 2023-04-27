@@ -22,8 +22,20 @@
    color: var(--color-text-dark);
 }
 
+
+
+
 .dark {
     background-color: #333; // or any other desired dark background color
     color: #fff; // or any other desired text color for dark mode
+  }
+  
+  .dark-mode-button {
+    // Default styles for the button
+  }
+  
+  .dark-mode-button.active {
+    // Styles for the active button, e.g. different background color
+    background-color: pink
   }
   
