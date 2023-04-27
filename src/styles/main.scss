@@ -1,41 +1,19 @@
-:root {
-    --color-background-light: #ffffff;
-    --color-background-dark: #222222;
-    --color-text-light: #000000;
-    --color-text-dark: #dddddd;
- }
- 
- .dark {
-    background-color: var(--color-background-dark);
-    color: var(--color-text-dark);
- }
- 
- .header,
- .footer {
-    background-color: var(--color-background-light);
-    color: var(--color-text-light);
- }
- 
- .header.dark,
- .footer.dark {
-    background-color: var(--color-background-dark);
-   color: var(--color-text-dark);
-}
 
-
-
-
-.dark {
+  .dark-mode-button {
+    background-color: rgb(222, 136, 228)
+  }
+  
+  .dark-mode-button.active {
+    // Styles for the active button,
+    background-color: rgb(192, 245, 255)
+  }
+  
+  .dark {
     background-color: #333; // or any other desired dark background color
     color: #fff; // or any other desired text color for dark mode
   }
   
-  .dark-mode-button {
-    // Default styles for the button
-  }
-  
-  .dark-mode-button.active {
-    // Styles for the active button, e.g. different background color
-    background-color: pink
+  .nav-link-dark {
+    color: #fff;
   }
   
