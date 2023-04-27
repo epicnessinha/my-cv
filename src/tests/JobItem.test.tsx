@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import JobItem from "./JobItem";
+import JobItem from "../components/JobItem/JobItem";
 
 describe("JobItem component", () => {
   test("renders job item with the provided data", () => {
