@@ -12,18 +12,18 @@ const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
       <h2>Experience</h2>
       <div className="experience-item">
         <JobItem
-          title="Software Engineer"
-          company="Company A"
+          title="Frontend Developer"
+          company="XING"
           description="I was responsible for x and y"
-          startDate={new Date("2018-07-01")}
+          startDate={new Date("2022-09-01")}
         />
       </div>
       <div className="experience-item">
         <JobItem
-          title="Web Developer"
-          company="Company B"
+          title="Frontend Intern"
+          company="NEW WORK SE"
           description="I was responsible for x and y"
-          startDate={new Date("2016-03-01")}
+          startDate={new Date("2022-09-01")}
         />
       </div>
     </div>

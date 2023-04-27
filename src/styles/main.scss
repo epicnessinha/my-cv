@@ -1,16 +1,13 @@
+.dark {
+  background-color: #333; // or any other desired dark background color
+  color: #fff; // or any other desired text color for dark mode
+}
 
-  
-  .dark {
-    background-color: #333; // or any other desired dark background color
-    color: #fff; // or any other desired text color for dark mode
-  }
-  
-  .nav-link-dark {
-    color: #fff;
-  }
+.nav-link-dark {
+  color: #fff;
+}
 
-  
-  @import url("https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600&display=swap");
 
 * {
   margin: 0;
@@ -22,8 +19,7 @@ body {
   font-family: "SF Pro Display", sans-serif;
 }
 
-
-//HEADER 
+//HEADER
 
 .header {
   display: flex;
@@ -132,218 +128,212 @@ body {
   }
 }
 
-
-
 //HOME
 
 .home-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 80vh;
-    padding: 2rem;
-    font-size: 1rem;
-    text-align: center;
-  
-    h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-  
-    p {
-      font-size: 1.25rem;
-      font-weight: 400;
-      line-height: 1.5;
-    }
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 2rem;
+  font-size: 1rem;
+  text-align: center;
 
-  //EXPERIENCE
-
-  :root {
-    --experience-item-bg: #f0f0f0;
-    --experience-item-text-color: #000;
-  }
-  
-  .experience-container.dark-mode {
-    --experience-item-bg: #007aff;
-    --experience-item-text-color: #fff;
-  }
-  
-  .experience-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 80vh;
-    padding: 2rem;
-    font-size: 1rem;
-  
-    h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-  
-    .experience-item {
-      background-color: var(--experience-item-bg);
-      color: var(--experience-item-text-color);
-      border-radius: 5px;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      width: 100%;
-      max-width: 600px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  
-      h3 {
-        font-size: 1.5rem;
-        font-weight: 600;
-        margin-bottom: 0.5rem;
-      }
-  
-      h4 {
-        font-size: 1.25rem;
-        font-weight: 500;
-        margin-bottom: 1rem;
-      }
-  
-      p {
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1.5;
-      }
-    }
-  }
-  
-  
-  
-  //CONTACTS
-
-  :root {
-    --contact-card-bg: #f5f5f7;
-    --contact-card-text-color: #000;
-  }
-  
-  .contacts-container.dark-mode {
-    --contact-card-bg: #007aff;
-    --contact-card-text-color: #fff;
-  }
-  
-
-  .contacts-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 80vh;
-    padding: 2rem;
-    font-size: 1rem;
-    
-    h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-  }
-  
-  .contact-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-  }
-  
-  .card {
-    display: flex;
-    align-items: center;
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    background-color: var(--contact-card-bg);
-    color: var(--contact-card-text-color);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  
-    &:hover {
-      transform: translateY(-8px);
-    }
-    i {
-      font-size: 2rem;
-      margin-right: 1rem;
-    }
-  
-    .label {
-      font-size: 0.9rem;
-      font-weight: 600;
-      margin-bottom: 0.2rem;
-      text-transform: uppercase;
-      color: #757575;
-    }
-  
-    p {
-      margin: 0;
-    }
-  }
-  
-  .phone-card {
-    i {
-      color: #007aff;
-    }
-  }
-  
-  .email-card {
-    i {
-      color: #ff9500;
-    }
-  }
-  
-  .linkedin-card {
-    i {
-      color: #0a66c2;
-    }
-  }
-  
-  .github-card {
-    i {
-      color: #171717;
-    }
-  }
-  
-  @media (max-width: 767px) {
-    .contact-cards {
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-  }
-  
-  //JOBS
-
-  .job-item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
     margin-bottom: 1rem;
-    background-color: #f9f9f9;
-  
+  }
+
+  p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+}
+
+//EXPERIENCE
+
+:root {
+  --experience-item-bg: #f0f0f0;
+  --experience-item-text-color: #000;
+}
+
+.experience-container.dark-mode {
+  --experience-item-bg: #007aff;
+  --experience-item-text-color: #fff;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 2rem;
+  font-size: 1rem;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .experience-item {
+    background-color: var(--experience-item-bg);
+    color: var(--experience-item-text-color);
+    border-radius: 5px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
     h3 {
       font-size: 1.5rem;
-      font-weight: 700;
+      font-weight: 600;
       margin-bottom: 0.5rem;
     }
-  
+
+    h4 {
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
     p {
       font-size: 1rem;
       font-weight: 400;
       line-height: 1.5;
     }
   }
-  
+}
 
-  //CONTACT FORM
+//CONTACTS
+
+:root {
+  --contact-card-bg: #f5f5f7;
+  --contact-card-text-color: #000;
+}
+
+.contacts-container.dark-mode {
+  --contact-card-bg: #007aff;
+  --contact-card-text-color: #fff;
+}
+
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 2rem;
+  font-size: 1rem;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+}
+
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  background-color: var(--contact-card-bg);
+  color: var(--contact-card-text-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-8px);
+  }
+  i {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+
+  .label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    text-transform: uppercase;
+    color: #757575;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.phone-card {
+  i {
+    color: #007aff;
+  }
+}
+
+.email-card {
+  i {
+    color: #ff9500;
+  }
+}
+
+.linkedin-card {
+  i {
+    color: #0a66c2;
+  }
+}
+
+.github-card {
+  i {
+    color: #171717;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-cards {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+//JOBS
+
+.job-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  background-color: #f9f9f9;
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+}
+
+//CONTACT FORM
 
 $primary-color: #9d9e9f;
 $secondary-color: #999999;
@@ -359,31 +349,32 @@ $padding: 10px;
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-  
+
   label {
     font-size: $font-size;
     color: $secondary-color;
     margin-bottom: $padding;
   }
-  
-  input, textarea {
+
+  input,
+  textarea {
     width: 100%;
     padding: $padding;
     border-radius: 4px;
     border: 1px solid $secondary-color;
     font-size: $font-size;
     margin-bottom: $padding;
-    
+
     &:focus {
       border-color: $primary-color;
     }
   }
-  
+
   textarea {
     height: 150px;
     resize: none;
   }
-  
+
   button[type="submit"] {
     background-color: $primary-color;
     color: #fff;
@@ -393,7 +384,7 @@ $padding: 10px;
     font-size: $font-size;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
-    
+
     &:hover {
       background-color: darken($primary-color, 10%);
     }
