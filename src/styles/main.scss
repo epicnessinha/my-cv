@@ -1,12 +1,4 @@
 
-  .dark-mode-button {
-    background-color: rgb(222, 136, 228)
-  }
-  
-  .dark-mode-button.active {
-    // Styles for the active button,
-    background-color: rgb(192, 245, 255)
-  }
   
   .dark {
     background-color: #333; // or any other desired dark background color
@@ -16,7 +8,6 @@
   .nav-link-dark {
     color: #fff;
   }
-
 
   
   @import url("https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600&display=swap");
@@ -30,6 +21,9 @@
 body {
   font-family: "SF Pro Display", sans-serif;
 }
+
+
+//HEADER 
 
 .header {
   display: flex;
@@ -93,14 +87,16 @@ body {
   }
 }
 
-  .footer {
+//FOOTER
+
+.footer {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 1.5rem 2rem;
   background-color: #fff;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
   font-size: 1rem;
+  text-align: center;
 
   &.dark {
     background-color: #333;
@@ -109,6 +105,7 @@ body {
 
   p {
     margin: 0;
+    margin: auto;
   }
 
   .dark-mode-button {
@@ -135,6 +132,10 @@ body {
   }
 }
 
+
+
+//HOME
+
 .home-container {
     display: flex;
     flex-direction: column;
@@ -158,6 +159,18 @@ body {
     }
   }
 
+  //EXPERIENCE
+
+  :root {
+    --experience-item-bg: #f0f0f0;
+    --experience-item-text-color: #000;
+  }
+  
+  .experience-container.dark-mode {
+    --experience-item-bg: #007aff;
+    --experience-item-text-color: #fff;
+  }
+  
   .experience-container {
     display: flex;
     flex-direction: column;
@@ -174,7 +187,8 @@ body {
     }
   
     .experience-item {
-      background-color: #f0f0f0;
+      background-color: var(--experience-item-bg);
+      color: var(--experience-item-text-color);
       border-radius: 5px;
       padding: 1.5rem;
       margin-bottom: 1.5rem;
@@ -202,6 +216,21 @@ body {
     }
   }
   
+  
+  
+  //CONTACTS
+
+  :root {
+    --contact-card-bg: #f5f5f7;
+    --contact-card-text-color: #000;
+  }
+  
+  .contacts-container.dark-mode {
+    --contact-card-bg: #007aff;
+    --contact-card-text-color: #fff;
+  }
+  
+
   .contacts-container {
     display: flex;
     flex-direction: column;
@@ -210,20 +239,85 @@ body {
     min-height: 80vh;
     padding: 2rem;
     font-size: 1rem;
-  
+    
     h2 {
       font-size: 2rem;
       font-weight: 700;
       margin-bottom: 1rem;
     }
+  }
+  
+  .contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .card {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    background-color: var(--contact-card-bg);
+    color: var(--contact-card-text-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  
+    &:hover {
+      transform: translateY(-8px);
+    }
+    i {
+      font-size: 2rem;
+      margin-right: 1rem;
+    }
+  
+    .label {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+      text-transform: uppercase;
+      color: #757575;
+    }
   
     p {
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.5;
+      margin: 0;
     }
   }
   
+  .phone-card {
+    i {
+      color: #007aff;
+    }
+  }
+  
+  .email-card {
+    i {
+      color: #ff9500;
+    }
+  }
+  
+  .linkedin-card {
+    i {
+      color: #0a66c2;
+    }
+  }
+  
+  .github-card {
+    i {
+      color: #171717;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .contact-cards {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+  
+  //JOBS
+
   .job-item {
     display: flex;
     flex-direction: column;
