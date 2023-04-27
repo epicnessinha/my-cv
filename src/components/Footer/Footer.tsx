@@ -8,9 +8,13 @@ const Footer: React.FC = () => {
    return (
       <footer className={`footer ${darkMode ? "dark" : ""}`}>
          <p>Footer Content</p>
-         <button onClick={toggleDarkMode}>
-            {darkMode ? "Light Mode" : "Dark Mode"}
-         </button>
+         <button
+  className={`dark-mode-button${darkMode ? " active" : ""}`}
+  onClick={toggleDarkMode}
+>
+  {darkMode ? "Light Mode" : "Dark Mode"}
+</button>
+
       </footer>
    );
 };

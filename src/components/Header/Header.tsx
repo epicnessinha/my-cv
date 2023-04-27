@@ -12,9 +12,13 @@ const Header: React.FC = () => {
          <h1>My Curriculum Vitae</h1>
          <NavLink to={"/"}> Home </NavLink>
          <NavLink to={"experience"}> Experience </NavLink>
-         <button onClick={toggleDarkMode}>
-            {darkMode ? "Light Mode" : "Dark Mode"}
-         </button>
+         <button
+  className={`dark-mode-button${darkMode ? " active" : ""}`}
+  onClick={toggleDarkMode}
+>
+  {darkMode ? "Light Mode" : "Dark Mode"}
+</button>
+
       </header>
    );
 };
