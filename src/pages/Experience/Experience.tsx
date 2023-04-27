@@ -9,11 +9,13 @@ const Experience: React.FC = () => {
          <ExperienceItem
             title="Software Engineer"
             company="Company A"
+            description = "I was responsable for x and y"
             startDate={new Date("2018-07-01")}
          />
          <ExperienceItem
             title="Web Developer"
             company="Company B"
+            description = "I was responsable for x and y"
             startDate={new Date("2016-03-01")}
          />
       </div>
