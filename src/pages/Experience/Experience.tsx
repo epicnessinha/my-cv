@@ -1,13 +1,17 @@
 import React from "react";
-import ExperienceItem from "../../components/JobItem/JobItem";
+import JobItem from "../../components/JobItem/JobItem";
 import "../../styles/main.scss";
 
-const Experience: React.FC = () => {
+interface ExperienceProps {
+  darkMode: boolean;
+}
+
+const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
   return (
-    <div className="experience-container">
+    <div className={`experience-container${darkMode ? " dark-mode" : ""}`}>
       <h2>Experience</h2>
       <div className="experience-item">
-        <ExperienceItem
+        <JobItem
           title="Software Engineer"
           company="Company A"
           description="I was responsible for x and y"
@@ -15,7 +19,7 @@ const Experience: React.FC = () => {
         />
       </div>
       <div className="experience-item">
-        <ExperienceItem
+        <JobItem
           title="Web Developer"
           company="Company B"
           description="I was responsible for x and y"

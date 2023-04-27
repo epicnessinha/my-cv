@@ -24,7 +24,7 @@ const Layout: React.FC = () => {
          <div className={`layout-container ${darkMode ? "dark" : ""}`}>
          <Routes>
          <Route path="/" element={<Home />} />
-         <Route path="/experience" element={<Experience />} />
+         <Route path="/experience" element={<Experience darkMode={false} />} />
          <Route path="/contacts" element={<Contacts />} />
           </Routes>
         </div>
