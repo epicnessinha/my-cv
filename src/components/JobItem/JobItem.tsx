@@ -3,10 +3,11 @@ import React, { useState, useEffect } from "react";
 interface ExperienceItemProps {
    title: string;
    company: string;
+   description: string;
    startDate: Date;
 }
 
-const ExperienceItem: React.FC<ExperienceItemProps> = ({ title, company, startDate }) => {
+const JobItem: React.FC<ExperienceItemProps> = ({ title, company,description, startDate }) => {
    const [elapsedTime, setElapsedTime] = useState("");
 
    useEffect(() => {
@@ -34,8 +35,9 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({ title, company, startDa
          <h3>{title}</h3>
          <p>Company: {company}</p>
          <p>Started: {elapsedTime}</p>
+         <p>Job Functions: {description} </p>
       </div>
    );
 };
 
-export default ExperienceItem;
+export default JobItem;
