@@ -15,6 +15,9 @@ const Header: React.FC = () => {
       <NavLink to={"experience"} className={darkMode ? "nav-link-dark" : ""}>
         Experience
       </NavLink>
+      <NavLink to={"contacts"} className={darkMode ? "nav-link-dark" : ""}>
+        Contacts
+      </NavLink>
       <a
         href="https://vanessaferreira-portfolio.netlify.app/"
         target="_blank"

@@ -31,7 +31,7 @@ const JobItem: React.FC<ExperienceItemProps> = ({ title, company,description, st
    }, [startDate]);
 
    return (
-      <div>
+      <div className="job-item">
          <h3>{title}</h3>
          <p>Company: {company}</p>
          <p>Started: {elapsedTime}</p>
