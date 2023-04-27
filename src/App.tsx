@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Layout from "../../my-cv/src/components/Layout/Layout"
+import Layout from "./components/Layout/Layout"
 
 const App: React.FC = () => {
   return (
