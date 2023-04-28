@@ -1,10 +1,10 @@
 // Header
 $header-bg-light: #fff;
-$header-bg-dark: #333;
+$header-bg-dark:black;
 $header-text-color-light: #000;
 $header-text-color-dark: #fff;
 $nav-link-dark-color: #ccc;
-$nav-link-hover-color: #0070c9;
+$nav-link-hover-color: #56ccf2;
 $nav-link-dark-hover-color: #56ccf2;
 $dark-mode-button-bg: #f1f1f1;
 $dark-mode-button-text-color: #333;
@@ -15,9 +15,9 @@ $dark-mode-button-hover-bg-active: #444;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 2rem;
+  padding: 2rem 2rem;
   background-color: $header-bg-light;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); é a linha separadora
   font-size: 1rem;
 
   &.dark {
@@ -37,6 +37,7 @@ $dark-mode-button-hover-bg-active: #444;
     text-decoration: none;
     margin-right: 1.5rem;
     transition: color 0.3s ease;
+    font-family: "Pixel";
 
     &.nav-link-dark {
       color: $nav-link-dark-color;

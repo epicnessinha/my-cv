@@ -9,25 +9,58 @@ $home-container-paragraph-line-height: 1.5;
 
 .home-container {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
   min-height: 80vh;
-  padding: 2rem;
   font-size: $home-container-font-size;
   text-align: center;
+  position: relative;
+  width: 100%;
+  height: auto;
 
-  h2 {
-    font-size: $home-container-heading-font-size;
-    font-weight: $home-container-heading-font-weight;
-    margin-bottom: $home-container-heading-margin-bottom;
-    font-family: "Real Ohio";
-    letter-spacing: 3px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; // Adjust this value to control the width of the image
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.7) 75%,
+        #000 100%
+      ),
+      url("../assets/img/Nessa.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    border-top-right-radius: 1rem; // Adjust this value to control the border-radius
+    border-bottom-right-radius: 1rem; // Adjust this value to control the border-radius
   }
 
-  p {
-    font-size: $home-container-paragraph-font-size;
-    font-weight: $home-container-paragraph-font-weight;
-    line-height: $home-container-paragraph-line-height;
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14rem;
+    text-align: center;
+
+    h1 {
+      font-size: $home-container-heading-font-size;
+      font-weight: $home-container-heading-font-weight;
+      margin-bottom: $home-container-heading-margin-bottom;
+      font-family: "Real Ohio";
+      letter-spacing: 3px;
+    }
+
+    p {
+      font-size: $home-container-paragraph-font-size;
+      font-weight: $home-container-paragraph-font-weight;
+      line-height: $home-container-paragraph-line-height;
+      font-family: "Pixel";
+    }
   }
 }
