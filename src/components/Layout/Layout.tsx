@@ -6,6 +6,7 @@ import Footer from "../../components/Footer/Footer"
 import Home from "../../pages/Home/Home"
 import Experience from "../../pages/Experience/Experience"
 import Contacts from "../../components/Contacts/Contacts"
+import Education from "../../pages/Education/Education";
 
 
 const Layout: React.FC = () => {
@@ -25,6 +26,7 @@ const Layout: React.FC = () => {
          <Routes>
          <Route path="/" element={<Home />} />
          <Route path="/experience" element={<Experience darkMode={false} />} />
+         <Route path="/education" element={<Education darkMode={false} />} />
          <Route path="/contacts" element={<Contacts />} />
           </Routes>
         </div>

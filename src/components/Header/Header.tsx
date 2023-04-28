@@ -16,6 +16,9 @@ const Header: React.FC = () => {
       <NavLink to={"experience"} className={darkMode ? "nav-link-dark" : ""}>
         Experience
       </NavLink>
+      <NavLink to={"education"} className={darkMode ? "nav-link-dark" : ""}>
+        Education
+      </NavLink>
       <NavLink to={"contacts"} className={darkMode ? "nav-link-dark" : ""}>
         Contacts
       </NavLink>
