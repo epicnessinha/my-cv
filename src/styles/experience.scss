@@ -1,5 +1,4 @@
-
-:root {
+:root { //a cor das letras no darkmode mudam aqui
     --experience-item-bg: #f0f0f0;
     --experience-item-text-color: #000;
   }
@@ -19,9 +18,11 @@
     font-size: 1rem;
   
     h2 {
-      font-size: 2rem;
-      font-weight: 700;
+      font-size: 4rem;
+      font-weight: 400;
       margin-bottom: 1rem;
+      font-family: "Real Ohio";
+      letter-spacing: 3px;
     }
   
     .experience-item {
