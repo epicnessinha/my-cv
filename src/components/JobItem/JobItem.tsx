@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import "../../styles/main.scss"
+import "../../styles/jobItem.scss"
 
 interface ExperienceItemProps {
    title: string;
