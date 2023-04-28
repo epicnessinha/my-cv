@@ -4,8 +4,13 @@
   src: url("../assets/fonts/Real\ Ohio.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Pixel";
+  src: url("../assets/fonts/LLPIXEL3.ttf") format("truetype");
+}
+
 // Variables
-$dark-bg-color: #333;
+$dark-bg-color: black;
 $dark-text-color: #fff;
 $font-family: 'SF Pro Display', sans-serif;
 

@@ -6,8 +6,10 @@ import "../../styles/home.scss"
 const Home: React.FC = () => {
    return (
       <div className="home-container">
-         <h2>Home</h2>
-         <p>Welcome to my curriculum vitae!</p>
+          <div className="text-content">
+         <h1>Vanessa Ferreira</h1>
+         <p>Frontend Developer</p>
+      </div>
       </div>
    );
 };

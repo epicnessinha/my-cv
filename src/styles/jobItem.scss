@@ -1,8 +1,8 @@
 // Jobs
 $job-item-padding: 1rem;
 $job-item-border: 1px solid #ccc;
-$job-item-border-radius: 4px;
-$job-item-margin-bottom: 1rem;
+$job-item-border-radius: 1rem;
+$job-item-margin-bottom: 2rem;
 $job-item-background-color: #f9f9f9;
 $job-item-heading-font-size: 1.5rem;
 $job-item-heading-font-weight: 700;
@@ -19,13 +19,13 @@ $job-item-paragraph-line-height: 1.5;
   padding: $job-item-padding;
   border: $job-item-border;
   border-radius: $job-item-border-radius;
-  margin-bottom: $job-item-margin-bottom;
   background-color: $job-item-background-color;
 
   h3 {
     font-size: $job-item-heading-font-size;
     font-weight: $job-item-heading-font-weight;
     margin-bottom: $job-item-heading-margin-bottom;
+    font-family: "Pixel";
   }
 
   p {

@@ -10,7 +10,7 @@ interface ExperienceProps {
 const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
   return (
     <div className={`experience-container${darkMode ? " dark-mode" : ""}`}>
-      <h2>Experience</h2>
+      <h2>Work Experience</h2>
       <div className="experience-item">
         <JobItem
           title="Frontend Developer"

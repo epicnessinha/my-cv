@@ -1,6 +1,6 @@
 // Footer
-$footer-bg-light: #fff;
-$footer-bg-dark: #333;
+$footer-bg-light: #ffffff;
+$footer-bg-dark: black;
 $footer-text-color-light: #000;
 $footer-text-color-dark: #fff;
 $dark-mode-button-bg: #f1f1f1;
@@ -11,11 +11,12 @@ $dark-mode-button-hover-bg-active: #444;
 .footer {
   display: flex;
   align-items: center;
-  padding: 1.5rem 2rem;
+  padding: 4rem 2rem;
   background-color: $footer-bg-light;
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  // box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); é a linha separadora
   font-size: 1rem;
   text-align: center;
+  font-family: "Pixel";
 
   &.dark {
     background-color: $footer-bg-dark;
