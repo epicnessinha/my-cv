@@ -1,45 +1,52 @@
-//FOOTER
+// Footer
+$footer-bg-light: #fff;
+$footer-bg-dark: #333;
+$footer-text-color-light: #000;
+$footer-text-color-dark: #fff;
+$dark-mode-button-bg: #f1f1f1;
+$dark-mode-button-text-color: #333;
+$dark-mode-button-hover-bg: #ddd;
+$dark-mode-button-hover-bg-active: #444;
 
 .footer {
-    display: flex;
-    align-items: center;
-    padding: 1.5rem 2rem;
-    background-color: #fff;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-    font-size: 1rem;
-    text-align: center;
-  
-    &.dark {
-      background-color: #333;
-      color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: $footer-bg-light;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  text-align: center;
+
+  &.dark {
+    background-color: $footer-bg-dark;
+    color: $footer-text-color-dark;
+  }
+
+  p {
+    margin: 0;
+    margin: auto;
+  }
+
+  .dark-mode-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: $dark-mode-button-bg;
+    color: $dark-mode-button-text-color;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &.active {
+      background-color: $footer-bg-dark;
+      color: $footer-text-color-dark;
     }
-  
-    p {
-      margin: 0;
-      margin: auto;
+
+    &:hover {
+      background-color: $dark-mode-button-hover-bg;
     }
-  
-    .dark-mode-button {
-      padding: 0.5rem 1rem;
-      border: none;
-      border-radius: 0.25rem;
-      background-color: #f1f1f1;
-      color: #333;
-      cursor: pointer;
-      transition: background-color 0.3s ease, color 0.3s ease;
-  
-      &.active {
-        background-color: #333;
-        color: #fff;
-      }
-  
-      &:hover {
-        background-color: #ddd;
-      }
-  
-      &.active:hover {
-        background-color: #444;
-      }
+
+    &.active:hover {
+      background-color: $dark-mode-button-hover-bg-active;
     }
   }
-  
+}

@@ -1,10 +1,17 @@
-//CONTACT FORM
-
+// Variables
 $primary-color: #9d9e9f;
 $secondary-color: #999999;
 $font-size: 16px;
 $padding: 10px;
 
+// Mixins
+@mixin button-hover($color) {
+  &:hover {
+    background-color: darken($color, 10%);
+  }
+}
+
+// Contact Form
 .send-me {
   margin-top: 50px;
 }
@@ -50,8 +57,6 @@ $padding: 10px;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
 
-    &:hover {
-      background-color: darken($primary-color, 10%);
-    }
+    @include button-hover($primary-color);
   }
 }

@@ -1,22 +1,31 @@
+// Home Container
+$home-container-font-size: 1rem;
+$home-container-heading-font-size: 2rem;
+$home-container-heading-font-weight: 700;
+$home-container-heading-margin-bottom: 1rem;
+$home-container-paragraph-font-size: 1.25rem;
+$home-container-paragraph-font-weight: 400;
+$home-container-paragraph-line-height: 1.5;
+
 .home-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 80vh;
-    padding: 2rem;
-    font-size: 1rem;
-    text-align: center;
-  
-    h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-  
-    p {
-      font-size: 1.25rem;
-      font-weight: 400;
-      line-height: 1.5;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 2rem;
+  font-size: $home-container-font-size;
+  text-align: center;
+
+  h2 {
+    font-size: $home-container-heading-font-size;
+    font-weight: $home-container-heading-font-weight;
+    margin-bottom: $home-container-heading-margin-bottom;
   }
+
+  p {
+    font-size: $home-container-paragraph-font-size;
+    font-weight: $home-container-paragraph-font-weight;
+    line-height: $home-container-paragraph-line-height;
+  }
+}
