@@ -1,3 +1,4 @@
+
 // Variables
 $default-font-size: 1rem;
 $card-hover-translate: -8px;
@@ -32,9 +33,11 @@ $dark-mode-card-text-color: #fff;
   }
 
   h2 {
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 4rem;
+    font-weight: 400;
     margin-bottom: 1rem;
+    font-family: "Real Ohio";
+    letter-spacing: 3px;
   }
 }
 

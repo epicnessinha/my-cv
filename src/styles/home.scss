@@ -1,7 +1,7 @@
 // Home Container
 $home-container-font-size: 1rem;
-$home-container-heading-font-size: 2rem;
-$home-container-heading-font-weight: 700;
+$home-container-heading-font-size: 4rem;
+$home-container-heading-font-weight: 400;
 $home-container-heading-margin-bottom: 1rem;
 $home-container-paragraph-font-size: 1.25rem;
 $home-container-paragraph-font-weight: 400;
@@ -21,6 +21,8 @@ $home-container-paragraph-line-height: 1.5;
     font-size: $home-container-heading-font-size;
     font-weight: $home-container-heading-font-weight;
     margin-bottom: $home-container-heading-margin-bottom;
+    font-family: "Real Ohio";
+    letter-spacing: 3px;
   }
 
   p {
