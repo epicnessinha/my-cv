@@ -15,16 +15,14 @@ const Education: React.FC<ExperienceProps> = ({ darkMode }) => {
         <StudyItem
           title="Frontend Developer"
           school="GeeksHub Academy"
-          course="Frontend development (React)"
-          startDate={new Date("2022-09-01")}
+          date="2022-09-01"
         />
       </div>
       <div className="experience-item">
         <StudyItem
           title="FullStack Software Developer"
           school="Academia de Código"
-          course="FullStack Software Development"
-          startDate={new Date("2022-09-01")}
+          date="2022-09-01"
         />
       </div>
     </div>
