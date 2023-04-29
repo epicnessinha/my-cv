@@ -1,7 +1,7 @@
 import React from "react";
 import JobItem from "../../components/JobItem/JobItem";
 import "../../styles/main.scss";
-import "../../styles/experience.scss"
+import "../../pages/Experience/experience.scss"
 
 interface ExperienceProps {
   darkMode: boolean;

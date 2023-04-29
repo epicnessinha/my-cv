@@ -1,6 +1,6 @@
 import { render, screen, act } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
-import { DarkModeContext, DarkModeProvider } from "../context/DarkModeContext";
+import { DarkModeContext, DarkModeProvider } from "./DarkModeContext";
 import React, { useContext } from "react";
 
 const TestComponent: React.FC = () => {

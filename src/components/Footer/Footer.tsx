@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { DarkModeContext } from "../../context/DarkModeContext"
 import "../../styles/main.scss"
-import "../../styles/footer.scss"
+import "../../components/Footer/footer.scss"
 
 const Footer: React.FC = () => {
    const { darkMode, toggleDarkMode } = useContext(DarkModeContext);

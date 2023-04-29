@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../../styles/main.scss"
-import "../../styles/jobItem.scss"
+import "../../components/JobItem/jobItem.scss"
+//importar studyitem
 
 interface ExperienceItemProps {
    title: string;
