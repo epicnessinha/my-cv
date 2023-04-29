@@ -1,6 +1,6 @@
 // Header
 $header-bg-light: #fff;
-$header-bg-dark:black;
+$header-bg-dark: black;
 $header-text-color-light: #000;
 $header-text-color-dark: #fff;
 $nav-link-dark-color: #ccc;
@@ -15,7 +15,7 @@ $dark-mode-button-hover-bg-active: #444;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 2rem;
+  padding: 3rem 2.5rem;
   background-color: $header-bg-light;
   // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); é a linha separadora
   font-size: 1rem;
@@ -27,7 +27,7 @@ $dark-mode-button-hover-bg-active: #444;
 
   h1 {
     font-weight: 500;
-    font-family: "Real Ohio"; 
+    font-family: "Real Ohio";
     letter-spacing: 2px;
   }
 
@@ -35,9 +35,12 @@ $dark-mode-button-hover-bg-active: #444;
   .nav-link-dark {
     color: inherit;
     text-decoration: none;
-    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 5rem;
     transition: color 0.3s ease;
-    font-family: "Pixel";
+    font-family: "Dutch";
+    font-size: 1.5rem;
+    font-weight: bold;
 
     &.nav-link-dark {
       color: $nav-link-dark-color;
@@ -74,4 +77,13 @@ $dark-mode-button-hover-bg-active: #444;
       background-color: $dark-mode-button-hover-bg-active;
     }
   }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    margin-left: 15rem;
+    
+  }
+
+ 
 }

@@ -7,6 +7,7 @@ import Home from "../../pages/Home/Home"
 import Experience from "../../pages/Experience/Experience"
 import Contacts from "../../components/Contacts/Contacts"
 import Education from "../../pages/Education/Education";
+import AboutMe from "../../components/AboutMe/AboutMe";
 
 
 const Layout: React.FC = () => {
@@ -28,6 +29,7 @@ const Layout: React.FC = () => {
          <Route path="/experience" element={<Experience darkMode={false} />} />
          <Route path="/education" element={<Education darkMode={false} />} />
          <Route path="/contacts" element={<Contacts />} />
+         <Route path="/about" element={<AboutMe />} />
           </Routes>
         </div>
         <Footer />

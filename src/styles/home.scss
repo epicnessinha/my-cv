@@ -21,10 +21,10 @@ $home-container-paragraph-line-height: 1.5;
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 3%;
+    left: 3%;
     width: 50%; // Adjust this value to control the width of the image
-    height: 100%;
+    height: 90%;
     background: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0.3) 0%,
@@ -36,8 +36,9 @@ $home-container-paragraph-line-height: 1.5;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 0;
-    border-top-right-radius: 1rem; // Adjust this value to control the border-radius
-    border-bottom-right-radius: 1rem; // Adjust this value to control the border-radius
+    // border-top-right-radius: 1rem; // Adjust this value to control the border-radius
+    // border-bottom-right-radius: 1rem; // Adjust this value to control the border-radius
+    border-radius: 1rem;
   }
 
   .text-content {
@@ -60,7 +61,7 @@ $home-container-paragraph-line-height: 1.5;
       font-size: $home-container-paragraph-font-size;
       font-weight: $home-container-paragraph-font-weight;
       line-height: $home-container-paragraph-line-height;
-      font-family: "Pixel";
+      font-family: "Dutch";
     }
   }
 }
