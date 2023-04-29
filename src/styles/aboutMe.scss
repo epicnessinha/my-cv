@@ -1,0 +1,84 @@
+$primary-color: #4285f4;
+$font-family: "Dutch";
+$large-font-size: 4rem;
+$medium-font-size: 1.6rem;
+$profile-image-size: 350px;
+
+@mixin box-shadow {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+.about-me-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80vh;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-left: 3rem;
+}
+
+.profile-image-container {
+  width: $profile-image-size;
+  height: $profile-image-size;
+  @include border-radius(50%);
+  @include box-shadow;
+  margin-bottom: 17rem;
+  margin-left: 6vh;
+  overflow: hidden;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-title {
+  font-family: "Real Ohio";
+  font-size: $large-font-size;
+  margin-bottom: 3vh;
+  text-align: left;
+}
+
+.text-container {
+  width: calc(100% - #{$profile-image-size + 4 * 16px});
+  text-align: justify;
+  padding: 0 15rem;
+  font-family: $font-family;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: -8rem;
+  margin-left: -2rem;
+}
+
+.aboutme-text {
+  font-family: $font-family;
+  font-size: $medium-font-size;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  .about-me-container {
+    flex-direction: column;
+  }
+
+  .text-container {
+    width: 100%;
+    margin-top: 3rem;
+    text-align: center;
+    margin-left: 0;
+    padding: 0 2rem;
+  }
+
+  .profile-image-container {
+    margin-bottom: 4rem;
+  }
+}

@@ -10,8 +10,12 @@ const Header: React.FC = () => {
   return (
     <header className={`header ${darkMode ? "dark" : ""}`}>
       <h1>My Curriculum Vitae</h1>
+      <nav className="nav-links">
       <NavLink to={"/"} className={darkMode ? "nav-link-dark" : ""}>
         Home
+      </NavLink>
+      <NavLink to={"about"} className={darkMode ? "nav-link-dark" : ""}>
+        About Me
       </NavLink>
       <NavLink to={"experience"} className={darkMode ? "nav-link-dark" : ""}>
         Experience
@@ -30,6 +34,7 @@ const Header: React.FC = () => {
       >
         Portfolio
       </a>
+      </nav>
       <button
         className={`dark-mode-button${darkMode ? " active" : ""}`}
         onClick={toggleDarkMode}
