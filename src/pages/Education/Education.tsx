@@ -1,7 +1,7 @@
 import React from "react";
 import StudyItem from "../../components/StudyItem/StudyItem";
 import "../../styles/main.scss";
-import "../../styles/studyItem.scss"
+import "../../components/StudyItem/studyItem.scss"
 
 interface ExperienceProps {
   darkMode: boolean;
