@@ -28,7 +28,7 @@
     background-color: #87daf6;
     color: var(--experience-item-text-color);
     border-radius: 1.5rem;
-    padding: 1.5rem;
+    padding: 1rem;
     margin-bottom: 1.5rem;
     width: 100%;
     max-width: 35rem;
@@ -54,8 +54,9 @@
 
       .expand-icon {
         font-size: 1.5rem;
-        margin-left: 0.5rem;
+        margin-left: auto;
       }
+      
     }
 
     .description {

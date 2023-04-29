@@ -25,12 +25,13 @@ $job-item-paragraph-line-height: 1.5;
     font-size: $job-item-heading-font-size;
     font-weight: $job-item-heading-font-weight;
     margin-bottom: $job-item-heading-margin-bottom;
-    font-family: "Pixel";
+    font-family: "Dutch";
   }
 
   p {
     font-size: $job-item-paragraph-font-size;
     font-weight: $job-item-paragraph-font-weight;
     line-height: $job-item-paragraph-line-height;
+    font-family: "";
   }
 }
