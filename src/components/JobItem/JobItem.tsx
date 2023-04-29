@@ -58,7 +58,7 @@ const JobItem: React.FC<ExperienceItemProps> = ({
             <span className="job-item-symbol">+</span>
           )}
         </h3>
-        <p>Company: {company}</p>
+        <p>{company}</p>
       </div>
       {expanded && (
         <div className="job-item-details">
