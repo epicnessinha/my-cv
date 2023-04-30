@@ -4,13 +4,13 @@ $font-family: "Delicate";
 $background-darken-filter: brightness(50%);
 
 
-.experience-container {
+.education-container {
   background-image: linear-gradient(
       to bottom,
       rgba(241, 166, 238, 0.25) 0%,
       rgba(232, 103, 232, 0.094) 85%,
       #282028da 100%
-    ), url('../../assets/img/wesroller.jpeg');
+    ), url('../../assets/img/wescolor.jpeg');
   background-size: cover;
   background-position: center bottom;
   padding: 2rem;
@@ -37,7 +37,7 @@ $background-darken-filter: brightness(50%);
 
   }
   
-  .experience-item {
+  .education-item {
     background-color: #f5b5edb4;
     color: $experience-item-text-color;
     border-radius: 1.5rem;
@@ -88,42 +88,42 @@ $background-darken-filter: brightness(50%);
 }
 
 @media screen and (max-width: 1024px) {
-  .experience-container {
+  .education-container {
     padding: 1.5rem;
 
     h2 {
       font-size: 3rem;
     }
 
-    .experience-item {
+    .education-item {
       max-width: 30rem;
     }
   }
 }
 
 @media screen and (max-width: 768px) {
-  .experience-container {
+  .education-container {
     padding: 1rem;
 
     h2 {
       font-size: 2.5rem;
     }
 
-    .experience-item {
+    .education-item {
       max-width: 25rem;
     }
   }
 }
 
 @media screen and (max-width: 480px) {
-  .experience-container {
+  .education-container {
     padding: 0.5rem;
 
     h2 {
       font-size: 2rem;
     }
 
-    .experience-item {
+    .education-item {
       max-width: 20rem;
     }
   }
