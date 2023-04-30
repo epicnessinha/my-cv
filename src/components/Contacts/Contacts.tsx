@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import ContactForm from "../ContactForm/ContactForm";
 import { DarkModeContext } from "../../context/DarkModeContext";
 import "../../styles/main.scss";
 import "./contacts.scss";
@@ -49,9 +48,6 @@ const Contacts: React.FC = () => {
           </div>
         </div>
       </div>
-
-      {/* <h3 className="send-me">Send me a message:</h3>
-      <ContactForm /> */}
     </div>
   );
 };

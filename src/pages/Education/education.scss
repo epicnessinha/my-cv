@@ -1,7 +1,7 @@
-$experience-item-bg: #f0f0f0;
-$experience-item-text-color: #000;
+$education-item-bg: #f0f0f0;
+$education-item-text-color: #000;
 $font-family: "Delicate";
-$background-darken-filter: brightness(50%);
+$background-darken-filter: brightness(80%);
 
 
 .education-container {
@@ -18,13 +18,22 @@ $background-darken-filter: brightness(50%);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 90vh;
+
+  &.dark {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("../../assets/img/wescolor.jpeg");
+    filter: $background-darken-filter; 
+  }
 
   &.dark-mode {
-    --experience-item-bg: #56ccf2;
-    --experience-item-text-color: #fff;
+    --education-item-bg: #56ccf2;
+    --education-item-text-color: #fff;
     opacity: 0.8;
-
   
   }
 
@@ -39,7 +48,7 @@ $background-darken-filter: brightness(50%);
   
   .education-item {
     background-color: #f5b5edb4;
-    color: $experience-item-text-color;
+    color: $education-item-text-color;
     border-radius: 1.5rem;
     padding: 1rem;
     margin-bottom: 1.5rem;
