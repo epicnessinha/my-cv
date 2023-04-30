@@ -15,22 +15,18 @@ $dark-mode-button-hover-bg-active: #444;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2.5rem 2rem;
-  // background: linear-gradient(
-  //   to bottom,
-  //   rgba(0, 0, 0, 0.3) 0%,
-  //   rgba(0, 0, 0, 0.5) 85%,
-  //   #000 100%
-  // ),
-  // url("../../assets/img/wesheader.jpeg");
-  // background-position: center 19%;
-  // background-repeat: no-repeat;
-  // background-size: cover;
+  padding: 2rem 2rem;
   background-color: $header-bg-light;
+  background-image: url("../../assets/img/header.png"); // Mantenha esta linha
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   font-size: 1rem;
 
+  // Adicione o seguinte bloco para mudar o background no modo escuro
   &.dark {
     background-color: $header-bg-dark;
+    background-image: none; // Remova a imagem de fundo no modo escuro
     color: $header-text-color-dark;
   }
 
