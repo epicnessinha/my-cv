@@ -50,10 +50,10 @@ $padding: 10px;
   }
 
   button[type="submit"] {
-    background-color: $primary-color;
+    background-color: rgb(66, 179, 231);
     color: #fff;
     padding: $padding * 2;
-    border: none;
+    border: black;
     border-radius: 4px;
     font-size: $font-size;
     cursor: pointer;

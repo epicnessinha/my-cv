@@ -8,6 +8,14 @@ import "./contacts.scss";
 const Contacts: React.FC = () => {
   const { darkMode } = useContext(DarkModeContext);
 
+  const handleLinkedInClick = () => {
+    window.open("https://www.linkedin.com/in/vanessabio", "_blank");
+  };
+
+  const handleGithubClick = () => {
+    window.open("https://github.com/epicnessinha", "_blank");
+  };
+
   return (
     <div className={`contacts-container ${darkMode ? "dark" : ""}`}>
       <h2>Contacts</h2>
@@ -26,18 +34,18 @@ const Contacts: React.FC = () => {
             <p>vanessa.ferreira.dev@gmail.com</p>
           </div>
         </div>
-        <div className="card linkedin-card">
+        <div className="card linkedin-card" onClick={handleLinkedInClick}>
           <FontAwesomeIcon className="icon" icon={["fab", "linkedin"]} />
           <div className="card-info">
             <p className="label">LinkedIn</p>
-            <p>/vanessabio</p>
+            <br/>
           </div>
         </div>
-        <div className="card github-card">
+        <div className="card github-card" onClick={handleGithubClick}>
           <FontAwesomeIcon className="icon" icon={["fab", "github"]} />
           <div className="card-info">
             <p className="label">GitHub</p>
-            <p>/epicnessinha</p>
+            <br/>
           </div>
         </div>
       </div>
