@@ -68,9 +68,11 @@ $background-darken-filter: brightness(50%);
 }
 
 .card {
+  position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 2rem;
   border-radius: $card-border-radius;
   background-color: var(--contact-card-bg);
   color: var(--contact-card-text-color);
@@ -81,9 +83,17 @@ $background-darken-filter: brightness(50%);
     transform: translateY($card-hover-translate);
   }
 
-  i {
+  .icon {
     font-size: 2rem;
-    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
   }
 
   .label {
@@ -101,18 +111,50 @@ $background-darken-filter: brightness(50%);
 
 .phone-card {
   @include card-icon-color(#007aff);
+
+  // Add the phone icon
+  .icon {
+    &:before {
+      content: "\f879";
+      font-family: "Font Awesome 6 Pro";
+    }
+  }
 }
 
 .email-card {
   @include card-icon-color(#ff9500);
+
+  // Add the email icon
+  .icon {
+    &:before {
+      content: "\f0e0";
+      font-family: "Font Awesome 6 Pro";
+    }
+  }
 }
 
 .linkedin-card {
   @include card-icon-color(#0a66c2);
+
+  // Add the LinkedIn icon
+  .icon {
+    &:before {
+      content: "\f08c";
+      font-family: "Font Awesome 6 Pro";
+    }
+  }
 }
 
 .github-card {
   @include card-icon-color(#171717);
+
+  // Add the GitHub icon
+  .icon {
+    &:before {
+      content: "\f09b";
+      font-family: "Font Awesome 6 Pro";
+    }
+  }
 }
 
 @media (max-width: 1024px) {

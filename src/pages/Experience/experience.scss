@@ -1,33 +1,39 @@
-:root {
-  --experience-item-bg: #f0f0f0;
-  --experience-item-text-color: #000;
-}
-
-.experience-container.dark-mode {
-  --experience-item-bg: #56ccf2;
-  --experience-item-text-color: #fff;
-}
+$experience-item-bg: #f0f0f0;
+$experience-item-text-color: #000;
+$font-family: "Delicate";
 
 .experience-container {
+  background: linear-gradient(
+      to bottom,
+      rgba(241, 166, 238, 0.25) 0%,
+      rgba(232, 103, 232, 0.094) 85%,
+      #282028da 100%
+    ),url('../../assets/img/wesvan.avif');
+  background-size: cover;
+  background-position: center bottom;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  min-height: 90vh;
-  font-size: 1rem;
-  
+  align-items: center;
+  min-height: 100vh;
+
+  &.dark-mode {
+    --experience-item-bg: #56ccf2;
+    --experience-item-text-color: #fff;
+  }
 
   h2 {
     font-size: 4rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    font-family: "Delicate";
+    font-family: $font-family;
     letter-spacing: 3px;
   }
-
+  
   .experience-item {
     background-color: #f5b5edb4;
-    color: var(--experience-item-text-color);
+    color: $experience-item-text-color;
     border-radius: 1.5rem;
     padding: 1rem;
     margin-bottom: 1.5rem;
@@ -74,9 +80,10 @@
   }
 }
 
-// For devices with a screen size between 768px and 1024px (Tablet)
 @media screen and (max-width: 1024px) {
   .experience-container {
+    padding: 1.5rem;
+
     h2 {
       font-size: 3rem;
     }
@@ -87,9 +94,10 @@
   }
 }
 
-// For devices with a screen size between 480px and 768px (Small Tablet or Large Mobile)
 @media screen and (max-width: 768px) {
   .experience-container {
+    padding: 1rem;
+
     h2 {
       font-size: 2.5rem;
     }
@@ -100,9 +108,10 @@
   }
 }
 
-// For devices with a screen size smaller than 480px (Mobile)
 @media screen and (max-width: 480px) {
   .experience-container {
+    padding: 0.5rem;
+
     h2 {
       font-size: 2rem;
     }

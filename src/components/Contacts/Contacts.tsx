@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ContactForm from "../ContactForm/ContactForm";
 import { DarkModeContext } from "../../context/DarkModeContext";
 import "../../styles/main.scss";
@@ -12,28 +13,28 @@ const Contacts: React.FC = () => {
       <h2>Contacts</h2>
       <div className="contact-cards">
         <div className="card phone-card">
-          <i className="fas fa-phone"></i>
+          <FontAwesomeIcon className="icon" icon="phone" />
           <div className="card-info">
             <p className="label">Phone</p>
             <p>+351 910085402</p>
           </div>
         </div>
         <div className="card email-card">
-          <i className="fas fa-envelope"></i>
+          <FontAwesomeIcon className="icon" icon="envelope" />
           <div className="card-info">
             <p className="label">Email</p>
             <p>vanessa.ferreira.dev@gmail.com</p>
           </div>
         </div>
         <div className="card linkedin-card">
-          <i className="fab fa-linkedin"></i>
+          <FontAwesomeIcon className="icon" icon={["fab", "linkedin"]} />
           <div className="card-info">
             <p className="label">LinkedIn</p>
             <p>/vanessabio</p>
           </div>
         </div>
         <div className="card github-card">
-          <i className="fab fa-github"></i>
+          <FontAwesomeIcon className="icon" icon={["fab", "github"]} />
           <div className="card-info">
             <p className="label">GitHub</p>
             <p>/epicnessinha</p>
