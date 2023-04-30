@@ -1,5 +1,5 @@
 // Footer
-$footer-bg-light: #ffffff;
+$footer-bg-light: #b3f4fac8;
 $footer-bg-dark: black;
 $footer-text-color-light: #000;
 $footer-text-color-dark: #fff;
@@ -11,16 +11,18 @@ $dark-mode-button-hover-bg-active: #444;
 .footer {
   display: flex;
   align-items: center;
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
   background-color: $footer-bg-light;
-  // box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); é a linha separadora
-  font-size: 1rem;
-  text-align: center;
+  background-image: url("../../assets/img/header.png"); // Mantenha esta linha
 
+  // Adicione o seguinte bloco para mudar o background no modo escuro
   &.dark {
     background-color: $footer-bg-dark;
+    background-image: none; // Remova a imagem de fundo no modo escuro
     color: $footer-text-color-dark;
   }
+
+
 
   p {
     margin: 0;

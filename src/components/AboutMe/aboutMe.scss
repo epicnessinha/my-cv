@@ -16,7 +16,7 @@ $profile-image-size: 350px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 80vh;
+  min-height: 90vh;
   text-align: center;
   position: relative;
   width: 100%;
@@ -33,6 +33,7 @@ $profile-image-size: 350px;
   background-size: contain ;
 
 }
+
 
 .profile-image-container {
   width: $profile-image-size;
@@ -60,7 +61,7 @@ $profile-image-size: 350px;
 .text-container {
   width: calc(100% - #{$profile-image-size + 4 * 16px});
   text-align: justify;
-  padding: 0 8rem;
+  padding: 0 13rem;
   font-family: $font-family;
   display: flex;
   flex-direction: column;
