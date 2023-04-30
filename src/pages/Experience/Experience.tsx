@@ -1,5 +1,5 @@
 import React from "react";
-import JobItem from "../../components/JobItem/JobItem";
+import JobItem from "../../components/Card/Card";
 import "../../styles/main.scss";
 import "../../pages/Experience/experience.scss"
 
@@ -16,16 +16,14 @@ const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
           title="Frontend Developer"
           company="XING"
           description="I was responsible for x and y"
-          startDate={new Date("2022-09-01")}
-        />
+          startDate={new Date("2022-09-01")} school={""}        />
       </div>
       <div className="experience-item">
         <JobItem
           title="Frontend Intern"
           company="NEW WORK SE"
           description="I was responsible for x and y"
-          startDate={new Date("2022-09-01")}
-        />
+          startDate={new Date("2022-09-01")} school={""}        />
       </div>
     </div>
   );

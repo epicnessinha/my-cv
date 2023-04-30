@@ -1,7 +1,9 @@
 import React from "react";
-import StudyItem from "../../components/StudyItem/StudyItem";
+
 import "../../styles/main.scss";
-import "../../components/StudyItem/studyItem.scss"
+import "../../components/Card/card.scss"
+import "../../pages/Education/education.scss"
+import JobItem from "../../components/Card/Card";
 
 interface ExperienceProps {
   darkMode: boolean;
@@ -12,18 +14,18 @@ const Education: React.FC<ExperienceProps> = ({ darkMode }) => {
     <div className={`experience-container${darkMode ? " dark-mode" : ""}`}>
       <h2>Academic Education</h2>
       <div className="experience-item">
-        <StudyItem
+        <JobItem
           title="Frontend Developer"
           school="GeeksHub Academy"
 
-          startDate={new Date("2022-09-01")} description={""}        />
+          startDate={new Date("2022-09-01")} description={""} company={""}        />
       </div>
       <div className="experience-item">
-        <StudyItem
+        <JobItem
           title="FullStack Software Developer"
           school="Academia de Código"
 
-          startDate={new Date("2022-09-01")} description={""}        />
+          startDate={new Date("2022-09-01")} description={""} company={""}        />
       </div>
     </div>
   );
