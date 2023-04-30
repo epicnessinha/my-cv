@@ -1,10 +1,10 @@
 // Home Container
 $home-container-font-size: 1rem;
-$home-container-heading-font-size: 4rem;
-$home-container-heading-font-weight: 400;
+$home-container-heading-font-size: 6rem;
+$home-container-heading-font-weight: bold;
 $home-container-heading-margin-bottom: 1rem;
-$home-container-paragraph-font-size: 1.25rem;
-$home-container-paragraph-font-weight: 400;
+$home-container-paragraph-font-size: 2rem;
+$home-container-paragraph-font-weight: bold;
 $home-container-paragraph-line-height: 1.5;
 
 .home-container {
@@ -17,20 +17,28 @@ $home-container-paragraph-line-height: 1.5;
   position: relative;
   width: 100%;
   height: auto;
-  background-color: rgba(192, 229, 255, 0.619);
   padding: auto;
+  background: linear-gradient(
+    to bottom,
+    rgba(166, 206, 241, 0.3) 0%,
+    rgba(103, 219, 232, 0.5) 95%,
+    #5a81ab1d 100%
+  ),
+  url("../assets/img/garage.jpeg");
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: contain;
 
   &::before {
     content: "";
     position: absolute;
-    top: 3%;
-    left: 3%;
+    left: 0%;
     width: 50%;
-    height: 90%;
+    height: 100%;
     background: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0.3) 0%,
-        rgba(0, 0, 0, 0.7) 75%,
+        rgba(0, 0, 0, 0.7) 95%,
         #000 100%
       ),
       url("../assets/img/Nessa.JPG");
@@ -38,7 +46,7 @@ $home-container-paragraph-line-height: 1.5;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 0;
-    border-radius: 1rem;
+    border-radius: 0.3rem;
   }
 
   .text-content {
@@ -46,14 +54,14 @@ $home-container-paragraph-line-height: 1.5;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10rem;
+    padding: 5rem;
     text-align: center;
 
     h1 {
       font-size: $home-container-heading-font-size;
       font-weight: $home-container-heading-font-weight;
       margin-bottom: $home-container-heading-margin-bottom;
-      font-family: "Real Ohio";
+      font-family: "Delicate";
       letter-spacing: 3px;
     }
 

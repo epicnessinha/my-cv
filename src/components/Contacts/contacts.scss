@@ -21,6 +21,16 @@ $dark-mode-card-text-color: #fff;
   min-height: 80vh;
   padding: 2rem;
   font-size: $default-font-size;
+  background: linear-gradient(
+    to bottom,
+    rgba(166, 206, 241, 0.3) 0%,
+    rgba(103, 219, 232, 0.5) 95%,
+    #5a81ab1d 100%
+  ),
+  url("../../assets/img/wesbudapest.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   // Contact Card Variables
   --contact-card-bg: #f5f5f7;
@@ -33,9 +43,9 @@ $dark-mode-card-text-color: #fff;
 
   h2 {
     font-size: 4rem;
-    font-weight: 400;
+    font-weight: bold;
     margin-bottom: 1rem;
-    font-family: "Real Ohio";
+    font-family: "Delicate";
     letter-spacing: 3px;
   }
 }

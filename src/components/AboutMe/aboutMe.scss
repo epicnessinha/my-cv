@@ -1,4 +1,4 @@
-$primary-color: #4285f4;
+
 $font-family: "Dutch";
 $large-font-size: 4rem;
 $medium-font-size: 1.6rem;
@@ -28,9 +28,10 @@ $profile-image-size: 350px;
     #a95aab 100%
   ),
   url("../../assets/img/wessofa.jpeg");
-  background-position: center right;
+  background-position: center left;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain ;
+
 }
 
 .profile-image-container {
@@ -50,7 +51,7 @@ $profile-image-size: 350px;
 }
 
 .about-title {
-  font-family: "Real Ohio";
+  font-family: "Delicate";
   font-size: $large-font-size;
   margin-bottom: 3vh;
   text-align: left;
@@ -59,13 +60,14 @@ $profile-image-size: 350px;
 .text-container {
   width: calc(100% - #{$profile-image-size + 4 * 16px});
   text-align: justify;
-  padding: 0 9rem;
+  padding: 0 8rem;
   font-family: $font-family;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 1rem;
-  margin-left: -14rem;
+  margin-right: 0 2rem;
+
+
 }
 
 .aboutme-text {
