@@ -63,8 +63,8 @@ const Card: React.FC<ExperienceItemProps> = ({
       </div>
       {expanded && (
         <div className="job-item-details">
-          <p>Started: {elapsedTime}</p>
-          <p>Job Functions: {description}</p>
+          <p>Started - {elapsedTime}</p>
+          <p>{description}</p>
         </div>
       )}
     </div>
