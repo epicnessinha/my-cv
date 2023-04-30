@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "../../styles/main.scss";
-import "../../components/JobItem/jobItem.scss";
+import "./card.scss";
 
 interface ExperienceItemProps {
   title: string;
   company: string;
   description: string;
   startDate: Date;
+  school: string;
 }
 
 const JobItem: React.FC<ExperienceItemProps> = ({

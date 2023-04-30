@@ -40,9 +40,10 @@ background-size:contain;
   height: $profile-image-size;
   @include border-radius(50%);
   @include box-shadow;
-  margin-bottom: 10rem;
+  margin-bottom: 8rem;
   margin-left: 10rem;
   overflow: hidden;
+  border: 5px solid #f18fe19f; 
 }
 
 .profile-image {
@@ -66,14 +67,16 @@ background-size:contain;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: -10rem;
+  margin-top: -8.5rem;
   margin-left: -10rem;
+  
 }
 
 .aboutme-text {
   font-family: $font-family;
   font-size: $medium-font-size;
-  font-weight: 400;
+  font-weight:bold;
+  
 }
 
 @media screen and (max-width: 768px) {
