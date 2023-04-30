@@ -17,11 +17,11 @@ const Header: React.FC = () => {
       <NavLink to={"about"} className={darkMode ? "nav-link-dark" : ""}>
         About Me
       </NavLink>
-      <NavLink to={"experience"} className={darkMode ? "nav-link-dark" : ""}>
-        Experience
-      </NavLink>
       <NavLink to={"education"} className={darkMode ? "nav-link-dark" : ""}>
         Education
+      </NavLink>
+      <NavLink to={"experience"} className={darkMode ? "nav-link-dark" : ""}>
+        Experience
       </NavLink>
       <NavLink to={"contacts"} className={darkMode ? "nav-link-dark" : ""}>
         Contacts
