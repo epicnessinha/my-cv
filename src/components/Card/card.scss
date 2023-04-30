@@ -26,6 +26,7 @@ $job-item-paragraph-line-height: 1.5;
   margin-right: 0.5rem;
 
 
+
   h3 {
     font-size: $job-item-heading-font-size;
     font-weight: $job-item-heading-font-weight;
@@ -40,6 +41,7 @@ $job-item-paragraph-line-height: 1.5;
     font-family: "";
   }
 }
+
 
 @media screen and (max-width: 1024px) {
   .job-item {

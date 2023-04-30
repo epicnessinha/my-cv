@@ -1,6 +1,6 @@
 // Variables
-$primary-color: #9d9e9f;
-$secondary-color: #999999;
+$primary-color: #070808;
+$secondary-color: #0e0e0e;
 $font-size: 16px;
 $padding: 10px;
 
@@ -13,7 +13,7 @@ $padding: 10px;
 
 // Contact Form
 .send-me {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .contact-form {
@@ -28,6 +28,7 @@ $padding: 10px;
     font-size: $font-size;
     color: $secondary-color;
     margin-bottom: $padding;
+    font-weight: bold;
   }
 
   input,
@@ -51,10 +52,11 @@ $padding: 10px;
 
   button[type="submit"] {
     background-color: rgb(66, 179, 231);
-    color: #fff;
+ font-weight: bold;
     padding: $padding * 2;
     border: black;
     border-radius: 4px;
+    width: 10rem;
     font-size: $font-size;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;

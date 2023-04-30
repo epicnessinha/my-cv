@@ -15,6 +15,7 @@ const Card: React.FC<ExperienceItemProps> = ({
   company,
   description,
   startDate,
+  school,
 }) => {
   const [elapsedTime, setElapsedTime] = useState("");
   const [expanded, setExpanded] = useState(false);
@@ -54,16 +55,17 @@ const Card: React.FC<ExperienceItemProps> = ({
         <h3>
           {title}{" "}
           {expanded ? (
-            <span className="job-item-symbol">-</span>
+            <span className="job-item-symbol">⬆️</span>
           ) : (
-            <span className="job-item-symbol">+</span>
+            <span className="job-item-symbol">⬇️</span>
           )}
         </h3>
         <p>{company}</p>
+        <p>⌛ {elapsedTime}.</p>
       </div>
       {expanded && (
         <div className="job-item-details">
-          <p>Started - {elapsedTime}</p>
+          <p>{school}</p>
           <p>{description}</p>
         </div>
       )}
