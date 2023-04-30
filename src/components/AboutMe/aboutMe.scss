@@ -38,8 +38,7 @@ $profile-image-size: 350px;
   height: $profile-image-size;
   @include border-radius(50%);
   @include box-shadow;
-  margin-bottom: 8rem;
-  margin-left: 10rem;
+  margin-left: 6.5rem;
   overflow: hidden;
   border: 5px solid #f18fe19f;
 }
@@ -60,13 +59,13 @@ $profile-image-size: 350px;
 .text-container {
   width: calc(100% - #{$profile-image-size + 4 * 16px});
   text-align: justify;
-  padding: 0 15rem;
+  padding: 0 9rem;
   font-family: $font-family;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: -8.5rem;
-  margin-left: -10rem;
+  margin-top: 1rem;
+  margin-left: -14rem;
 }
 
 .aboutme-text {
