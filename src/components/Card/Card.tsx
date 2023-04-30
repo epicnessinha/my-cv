@@ -10,7 +10,7 @@ interface ExperienceItemProps {
   school: string;
 }
 
-const JobItem: React.FC<ExperienceItemProps> = ({
+const Card: React.FC<ExperienceItemProps> = ({
   title,
   company,
   description,
@@ -71,4 +71,4 @@ const JobItem: React.FC<ExperienceItemProps> = ({
   );
 };
 
-export default JobItem;
+export default Card;

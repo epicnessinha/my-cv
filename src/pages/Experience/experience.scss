@@ -1,4 +1,4 @@
-:root { //a cor das letras no darkmode mudam aqui
+:root {
   --experience-item-bg: #f0f0f0;
   --experience-item-text-color: #000;
 }
@@ -33,7 +33,7 @@
     width: 100%;
     max-width: 35rem;
     box-shadow: 0 4px 6px rgba(165, 19, 19, 0.1);
-   
+
     .expandable {
       display: flex;
       justify-content: space-between;
@@ -56,7 +56,6 @@
         font-size: 1.5rem;
         margin-left: auto;
       }
-      
     }
 
     .description {
@@ -70,6 +69,45 @@
       .description {
         display: block;
       }
+    }
+  }
+}
+
+// For devices with a screen size between 768px and 1024px (Tablet)
+@media screen and (max-width: 1024px) {
+  .experience-container {
+    h2 {
+      font-size: 3rem;
+    }
+
+    .experience-item {
+      max-width: 30rem;
+    }
+  }
+}
+
+// For devices with a screen size between 480px and 768px (Small Tablet or Large Mobile)
+@media screen and (max-width: 768px) {
+  .experience-container {
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    .experience-item {
+      max-width: 25rem;
+    }
+  }
+}
+
+// For devices with a screen size smaller than 480px (Mobile)
+@media screen and (max-width: 480px) {
+  .experience-container {
+    h2 {
+      font-size: 2rem;
+    }
+
+    .experience-item {
+      max-width: 20rem;
     }
   }
 }

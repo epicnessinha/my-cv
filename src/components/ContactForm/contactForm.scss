@@ -21,6 +21,8 @@ $padding: 10px;
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
+  width: 100%;
+  max-width: 600px;
 
   label {
     font-size: $font-size;
@@ -58,5 +60,31 @@ $padding: 10px;
     transition: background-color 0.2s ease-in-out;
 
     @include button-hover($primary-color);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-form {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-form {
+    width: 100%;
+    padding: 0 $padding;
+    
+    label {
+      font-size: $font-size * 0.9;
+    }
+
+    input,
+    textarea {
+      font-size: $font-size * 0.9;
+    }
+
+    button[type="submit"] {
+      font-size: $font-size * 0.9;
+    }
   }
 }
