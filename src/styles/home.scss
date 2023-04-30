@@ -17,6 +17,8 @@ $home-container-paragraph-line-height: 1.5;
   position: relative;
   width: 100%;
   height: auto;
+  background-color: rgba(192, 229, 255, 0.619);
+  padding: auto;
 
   &::before {
     content: "";
@@ -44,7 +46,7 @@ $home-container-paragraph-line-height: 1.5;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 14rem;
+    padding: 10rem;
     text-align: center;
 
     h1 {
