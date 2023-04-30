@@ -21,7 +21,18 @@ $profile-image-size: 350px;
   position: relative;
   width: 100%;
   height: auto;
-  margin-left: 3rem;
+  // margin-left: 3rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(241, 166, 239, 0.3) 0%,
+    rgba(232, 103, 232, 0.5) 85%,
+    #a95aab 100%
+  ),
+  url("../../assets/img/wessofa.jpeg");
+background-position: center right; 
+background-repeat: no-repeat;
+background-size:contain;
+
 }
 
 .profile-image-container {
@@ -29,8 +40,8 @@ $profile-image-size: 350px;
   height: $profile-image-size;
   @include border-radius(50%);
   @include box-shadow;
-  margin-bottom: 17rem;
-  margin-left: 6vh;
+  margin-bottom: 10rem;
+  margin-left: 10rem;
   overflow: hidden;
 }
 
@@ -55,8 +66,8 @@ $profile-image-size: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: -8rem;
-  margin-left: -2rem;
+  margin-top: -10rem;
+  margin-left: -10rem;
 }
 
 .aboutme-text {
