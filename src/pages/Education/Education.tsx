@@ -3,7 +3,7 @@ import React from "react";
 import "../../styles/main.scss";
 import "../../components/Card/card.scss"
 import "../../pages/Education/education.scss"
-import JobItem from "../../components/Card/Card";
+import Card from "../../components/Card/Card";
 
 interface ExperienceProps {
   darkMode: boolean;
@@ -14,14 +14,14 @@ const Education: React.FC<ExperienceProps> = ({ darkMode }) => {
     <div className={`experience-container${darkMode ? " dark-mode" : ""}`}>
       <h2>Academic Education</h2>
       <div className="experience-item">
-        <JobItem
+        <Card
           title="Frontend Developer"
           school="GeeksHub Academy"
 
           startDate={new Date("2022-09-01")} description={""} company={""}        />
       </div>
       <div className="experience-item">
-        <JobItem
+        <Card
           title="FullStack Software Developer"
           school="Academia de Código"
 

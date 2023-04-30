@@ -16,24 +16,22 @@ $dark-mode-button-hover-bg-active: #444;
   justify-content: space-between;
   align-items: center;
   padding: 3rem 2.5rem;
-//   background: linear-gradient(
-//     to bottom,
-//     rgba(0, 0, 0, 0.3) 0%,
-//     rgba(0, 0, 0, 0.5) 85%,
-//     #000 100%
-//   ),
-//   url("../../assets/img/wesheader.jpeg");
-// background-position: center 19%; 
-// background-repeat: no-repeat;
-// background-size: cover;
+  // background: linear-gradient(
+  //   to bottom,
+  //   rgba(0, 0, 0, 0.3) 0%,
+  //   rgba(0, 0, 0, 0.5) 85%,
+  //   #000 100%
+  // ),
+  // url("../../assets/img/wesheader.jpeg");
+  // background-position: center 19%;
+  // background-repeat: no-repeat;
+  // background-size: cover;
   background-color: $header-bg-light;
-  // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); é a linha separadora
   font-size: 1rem;
 
   &.dark {
     background-color: $header-bg-dark;
     color: $header-text-color-dark;
-    
   }
 
   h1 {
@@ -93,8 +91,58 @@ $dark-mode-button-hover-bg-active: #444;
     display: flex;
     align-items: center;
     margin-left: 15rem;
-    
   }
+}
 
- 
+// For devices with a screen size between 768px and 1024px (Tablet)
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 2rem 1.5rem;
+    background-size: cover;
+
+    .nav-links {
+      margin-left: 5rem;
+    }
+  }
+}
+
+// For devices with a screen size between 480px and 768px (Small Tablet or Large Mobile)
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    background-size: cover;
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    .nav-links {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+  }
+}
+
+// For devices with a screen size smaller than 480px (Mobile)
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 1rem;
+    background-size: cover;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    a,
+    .nav-link-dark {
+      font-size: 1.2rem;
+      margin-left: 0.5rem;
+      margin-right: 1rem;
+    }
+
+    .nav-links {
+      margin-top: 0.5rem;
+    }
+  }
 }

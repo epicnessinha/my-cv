@@ -2,7 +2,7 @@
 $job-item-padding: 1rem;
 $job-item-border: 1px solid #f872d971;
 $job-item-border-radius: 1rem;
-$job-item-margin-bottom: 2rem;
+$job-item-margin-bottom: 0.3rem;
 $job-item-background-color: #b3f4fac8;
 $job-item-heading-font-size: 1.5rem;
 $job-item-heading-font-weight: 700;
@@ -20,6 +20,11 @@ $job-item-paragraph-line-height: 1.5;
   border: $job-item-border;
   border-radius: $job-item-border-radius;
   background-color: $job-item-background-color;
+  margin-bottom: $job-item-margin-bottom;
+  margin-top: 0.3rem;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+
 
   h3 {
     font-size: $job-item-heading-font-size;
@@ -33,5 +38,41 @@ $job-item-paragraph-line-height: 1.5;
     font-weight: $job-item-paragraph-font-weight;
     line-height: $job-item-paragraph-line-height;
     font-family: "";
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .job-item {
+    h3 {
+      font-size: 1.3rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .job-item {
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .job-item {
+    h3 {
+      font-size: 1.1rem;
+    }
+
+    p {
+      font-size: 0.75rem;
+    }
   }
 }

@@ -8,6 +8,8 @@ import Experience from "../../pages/Experience/Experience"
 import Contacts from "../../components/Contacts/Contacts"
 import Education from "../../pages/Education/Education";
 import AboutMe from "../../components/AboutMe/AboutMe";
+import "../../styles/main.scss"
+
 
 
 const Layout: React.FC = () => {

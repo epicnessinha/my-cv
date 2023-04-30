@@ -17,7 +17,6 @@ $dark-mode-button-hover-bg-active: #444;
   font-size: 1rem;
   text-align: center;
 
-
   &.dark {
     background-color: $footer-bg-dark;
     color: $footer-text-color-dark;
@@ -49,5 +48,26 @@ $dark-mode-button-hover-bg-active: #444;
     &.active:hover {
       background-color: $dark-mode-button-hover-bg-active;
     }
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  p {
+    order: 2;
+  }
+
+  .dark-mode-button {
+    order: 1;
   }
 }
