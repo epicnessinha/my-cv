@@ -1,5 +1,7 @@
 #  ⚠️ Currently under development! ⚠️
 
+My Curriculum Vitae Website with design inspired by Wes Anderson aesthetic.
+
 ## Available Scripts
 
 In the project directory, you can run:
