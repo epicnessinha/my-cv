@@ -56,9 +56,9 @@ $profile-image-size: 350px;
 }
 
 .text-container {
-  width: calc(100% - #{$profile-image-size + 4 * 10px});
+  width: calc(85% - #{$profile-image-size + 4 * 10px});
   text-align: justify;
-  padding: 0 13rem;
+  padding: 0 6rem;
   font-family: $font-family;
   display: flex;
   flex-direction: column;
