@@ -31,7 +31,7 @@ Follow this steps:
 ### 2. Open [Netfly](https://githubdiscovery-vanessa.netlify.app/) on Google Chrome browser.
 
 Runs the app in the development mode.\
-Opens [http://localhost:3000](http://localhost:3000) to view it in your browser 
+Opens [http://localhost:3000](http://localhost:3000) to view it in your browser (Use Google Chrome)
 
 ### `npm test`
 
