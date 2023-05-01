@@ -1,8 +1,7 @@
 $education-item-bg: #f0f0f0;
 $education-item-text-color: #000;
-$font-family: "Delicate";
+$font-family: "futura";
 $background-darken-filter: brightness(80%);
-
 
 .education-container {
   background-image: linear-gradient(
@@ -10,7 +9,8 @@ $background-darken-filter: brightness(80%);
       rgba(241, 166, 238, 0.25) 0%,
       rgba(232, 103, 232, 0.094) 85%,
       #282028da 100%
-    ), url('../../assets/img/wescolor.jpeg');
+    ),
+    url("../../assets/img/wescolor.jpeg");
   background-size: cover;
   background-position: center bottom;
   padding: 2rem;
@@ -27,25 +27,27 @@ $background-darken-filter: brightness(80%);
         rgba(0, 0, 0, 0.5)
       ),
       url("../../assets/img/wescolor.jpeg");
-    filter: $background-darken-filter; 
+    filter: $background-darken-filter;
   }
 
   &.dark-mode {
     --education-item-bg: #56ccf2;
     --education-item-text-color: #fff;
+    filter: $background-darken-filter;
     opacity: 0.8;
-  
   }
+  
 
   h2 {
     font-size: 4rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
     font-family: $font-family;
     letter-spacing: 3px;
-
+    margin-right: -40rem;
   }
-  
+
   .education-item {
     background-color: #f5b5edb4;
     color: $education-item-text-color;
@@ -56,12 +58,12 @@ $background-darken-filter: brightness(80%);
     max-width: 35rem;
     box-shadow: 0 4px 6px rgba(165, 19, 19, 0.1);
     cursor: pointer;
+    margin-right: -50rem;
 
     .expandable {
       display: flex;
       justify-content: space-between;
       align-items: center;
-    
 
       h3 {
         font-size: 1.5rem;

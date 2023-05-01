@@ -6,10 +6,12 @@ $header-text-color-dark: white;
 $nav-link-dark-color: #ccc;
 $nav-link-hover-color: #25748f;
 $nav-link-dark-hover-color: #56ccf2;
-$dark-mode-button-bg: #f1f1f1;
-$dark-mode-button-text-color: #333;
-$dark-mode-button-hover-bg: #ddd;
-$dark-mode-button-hover-bg-active: #444;
+$dark-mode-button-bg: #333;
+$dark-mode-button-bg-active: #dcd8d8;
+$dark-mode-button-text-color: #f1f1f1;
+$dark-mode-button-text-color-active: black;
+$dark-mode-button-hover-bg: #605c5c;
+$dark-mode-button-hover-bg-active: #73cbf4;
 
 .header {
   display: flex;
@@ -17,32 +19,34 @@ $dark-mode-button-hover-bg-active: #444;
   align-items: center;
   padding: 2rem 2rem;
   background-image: linear-gradient(
-    to bottom,
-    rgba(166, 206, 241, 0.954) 0%,
-    rgba(155, 214, 220, 0.5) 95%,
-    #eeeaed5c 100%
-  ),url("../../assets/img/wall.jpeg");
+      to bottom,
+      rgba(166, 206, 241, 0.954) 0%,
+      rgba(155, 214, 220, 0.5) 95%,
+      #eeeaed5c 100%
+    ),
+    url("../../assets/img/wall.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $header-bg-light;
-  font-size: 1rem;
+  font-size: 1.5rem;
   border-bottom: 5px solid rgb(9, 9, 9);
 
   &.dark {
     background-color: $header-bg-dark;
     color: $header-text-color-dark;
     background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.5) 100%
-    ), url("../../assets/img/wall.jpeg");
+        to bottom,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url("../../assets/img/wall.jpeg");
   }
 
   h1 {
-    font-weight: 500;
-    font-family: "Delicate";
+    font-family: "sand";
     letter-spacing: 2px;
+    font-size: 1.5rem;
   }
 
   a,
@@ -52,7 +56,7 @@ $dark-mode-button-hover-bg-active: #444;
     margin-left: 2rem;
     margin-right: 2rem;
     transition: color 0.3s ease;
-    font-family: "Dutch";
+    font-family: "Wes";
     font-size: 1.5rem;
     font-weight: bold;
 
@@ -79,8 +83,10 @@ $dark-mode-button-hover-bg-active: #444;
     transition: background-color 0.3s ease, color 0.3s ease;
 
     &.active {
-      background-color: $header-bg-dark;
-      color: $header-text-color-dark;
+      background-color: $dark-mode-button-bg-active;
+      color: $dark-mode-button-text-color-active; 
+     
+      
     }
 
     &:hover {
@@ -91,7 +97,7 @@ $dark-mode-button-hover-bg-active: #444;
       background-color: $dark-mode-button-hover-bg-active;
     }
   }
-  
+
   .nav-links {
     display: flex;
     align-items: center;

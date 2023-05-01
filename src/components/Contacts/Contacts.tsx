@@ -17,7 +17,9 @@ const Contacts: React.FC = () => {
 
   return (
     <div className={`contacts-container ${darkMode ? "dark" : ""}`}>
-      {/* <h2>Contacts</h2> */}
+      <div className="contact-title">
+      <p>Contacts</p>
+      </div>
       <div className="contact-cards">
         <div className="card phone-card">
           <FontAwesomeIcon className="icon" icon="phone" />

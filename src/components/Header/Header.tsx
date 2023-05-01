@@ -9,7 +9,7 @@ const Header: React.FC = () => {
 
   return (
     <header className={`header ${darkMode ? "dark" : ""}`}>
-      <h1>My Curriculum Vitae</h1>
+      <h1>Curriculum Vitae</h1>
       <nav className="nav-links">
       <NavLink to={"/"} className={darkMode ? "nav-link-dark" : ""}>
         Home

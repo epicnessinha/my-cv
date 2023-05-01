@@ -1,8 +1,8 @@
 // Home Container
 $home-container-font-size: 1rem;
-$home-container-heading-font-size: 6rem;
-$home-container-heading-font-weight: bold;
-$home-container-heading-margin-bottom: 1rem;
+$home-container-heading-font-size: 10rem;
+$home-container-heading-font-weight: "";
+$home-container-heading-margin-bottom: 1.5rem;
 $home-container-paragraph-font-size: 2rem;
 $home-container-paragraph-font-weight: bold;
 $home-container-paragraph-line-height: 1.5;
@@ -49,22 +49,25 @@ $home-container-paragraph-line-height: 1.5;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 11rem;
+    padding: 9rem;
     text-align: center;
 
     h1 {
       font-size: $home-container-heading-font-size;
       font-weight: $home-container-heading-font-weight;
       margin-bottom: $home-container-heading-margin-bottom;
-      font-family: "Delicate";
+      font-family: "flor";
       letter-spacing: 3px;
+      margin-top: -5rem;
+      
     }
 
     p {
       font-size: $home-container-paragraph-font-size;
       font-weight: $home-container-paragraph-font-weight;
       line-height: $home-container-paragraph-line-height;
-      font-family: "Dutch";
+      font-family: "Dam";
+      letter-spacing: 1px;
     }
   }
 }
