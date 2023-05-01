@@ -3,10 +3,12 @@ $footer-bg-light: #b3f4fac8;
 $footer-bg-dark: black;
 $footer-text-color-light: #000;
 $footer-text-color-dark: #fff;
-$dark-mode-button-bg: #f1f1f1;
-$dark-mode-button-text-color: #333;
-$dark-mode-button-hover-bg: #ddd;
-$dark-mode-button-hover-bg-active: #444;
+$dark-mode-button-bg: #333;
+$dark-mode-button-bg-active: #dcd8d8;
+$dark-mode-button-text-color: #f1f1f1;
+$dark-mode-button-text-color-active: black;
+$dark-mode-button-hover-bg: #605c5c;
+$dark-mode-button-hover-bg-active: #73cbf4;
 
 .footer {
   display: flex;
@@ -53,8 +55,8 @@ $dark-mode-button-hover-bg-active: #444;
     transition: background-color 0.3s ease, color 0.3s ease;
 
     &.active {
-      background-color: $footer-bg-dark;
-      color: $footer-text-color-dark;
+      background-color: $dark-mode-button-bg-active;
+      color: $dark-mode-button-text-color-active;
     }
 
     &:hover {
