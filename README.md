@@ -10,7 +10,11 @@ I was inspired by the Wes Anderson aesthetic to create the UI design of this pro
 This Web-based CV have 3 pages, reusable components, a timer, dark mode, header and footer that remains the same on every page, unit tests (Jest), redirects to my personal websites (Linkedin, Github and Portfolio), responsive design (currently doing some fixings) and it was deployed on Netlify.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8cf5e631-0a68-4286-b4d5-c3e021ab4cff/deploy-status)](https://vanessaferreira-cv.netlify.app/) 
- 
+
+
+## Visuals 
+
+<img src="https://github.com/epicnessinha/my-cv/blob/master/src/assets/img/Homepage.png?raw=true" alt="Homepage" width="45%"/><img src="https://github.com/epicnessinha/my-cv/blob/master/src/assets/img/About%20me.png?raw=true" alt="About" width="45%"/><img src="https://github.com/epicnessinha/my-cv/blob/master/src/assets/img/Education.png?raw=true" alt="Education" width="45%"/><img src="" alt="Experience" width="45%"/><img src="https://github.com/epicnessinha/my-cv/blob/master/src/assets/img/Contacts.png?raw=true" alt="Contacts" width="45%"/><img src="" alt="Portfolio" width="45%"/>
 
 ## Instructions to use:
 
