@@ -1,6 +1,6 @@
 $education-item-bg: #f0f0f0;
 $education-item-text-color: #000;
-$font-family: "Delicate";
+$font-family: "futura";
 $background-darken-filter: brightness(80%);
 
 
@@ -40,9 +40,11 @@ $background-darken-filter: brightness(80%);
   h2 {
     font-size: 4rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
+    margin-top:2rem;
     font-family: $font-family;
     letter-spacing: 3px;
+    margin-right: -40rem;
 
   }
   
@@ -56,6 +58,7 @@ $background-darken-filter: brightness(80%);
     max-width: 35rem;
     box-shadow: 0 4px 6px rgba(165, 19, 19, 0.1);
     cursor: pointer;
+    margin-right: -50rem;
 
     .expandable {
       display: flex;

@@ -59,12 +59,14 @@ $background-darken-filter: brightness(80%);
     --contact-card-text-color: $dark-mode-card-text-color;
   }
 
-  h2 {
+  .contact-title {
     font-size: 4rem;
     font-weight: bold;
-    margin-bottom: 1rem;
-    font-family: "Delicate";
+    margin-bottom: 10rem;
+    font-family: "futura";
     letter-spacing: 3px;
+    margin-top: -15rem;
+    ;
   }
 }
 

@@ -1,7 +1,7 @@
 // Import fonts
 @font-face {
-  font-family: "Real Ohio";
-  src: url("../assets/fonts/Real\ Ohio.ttf") format("truetype");
+  font-family: "Sand";
+  src: url("../assets/fonts/Santrome-rgnWL.otf") format("truetype");
 }
 
 @font-face {
@@ -15,14 +15,18 @@
 }
 
 @font-face {
-  font-family: "Unicorn";
-  src: url("../assets/fonts/BadUnicornDemoRegular-BVWx.ttf") format("truetype");
+  font-family: "Dam";
+  src: url("../assets/fonts/QuerinaHandwritten-AL25L.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Flor";
+  src: url("../assets/fonts/FloristonePhidelphia-8MvW0.otf") format("truetype");
+}
 
 @font-face {
-  font-family: "Balonku";
-  src: url("../assets/fonts/BalonkuRegular-la1w.otf") format("truetype");
+  font-family: "Wes";
+  src: url("../assets/fonts/Wes.otf") format("truetype");
 }
 // Variables
 $dark-bg-color: black;

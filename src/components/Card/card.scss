@@ -7,7 +7,7 @@ $job-item-background-color: #b3f4fac8;
 $job-item-heading-font-size: 1.5rem;
 $job-item-heading-font-weight: 700;
 $job-item-heading-margin-bottom: 0.5rem;
-$job-item-paragraph-font-size: 1rem;
+$job-item-paragraph-font-size: 1.3rem;
 $job-item-paragraph-font-weight: 400;
 $job-item-paragraph-line-height: 1.5;
 
@@ -30,14 +30,15 @@ $job-item-paragraph-line-height: 1.5;
     font-size: $job-item-heading-font-size;
     font-weight: $job-item-heading-font-weight;
     margin-bottom: $job-item-heading-margin-bottom;
-    font-family: "Dutch";
+    font-family: "Dam";
   }
 
   p {
     font-size: $job-item-paragraph-font-size;
     font-weight: $job-item-paragraph-font-weight;
     line-height: $job-item-paragraph-line-height;
-    font-family: "";
+    font-family: "wes";
+    text-align: justify;
   }
 }
 

@@ -1,7 +1,7 @@
 
-$font-family: "Dutch";
-$large-font-size: 4rem;
-$medium-font-size: 1.6rem;
+$font-family: "Futura";
+$large-font-size: 3rem;
+$medium-font-size: 1.3rem;
 $profile-image-size: 350px;
 
 @mixin box-shadow {
@@ -52,21 +52,22 @@ $profile-image-size: 350px;
 }
 
 .about-title {
-  font-family: "Delicate";
+  font-family: "futura";
   font-size: $large-font-size;
   margin-bottom: 3vh;
   text-align: left;
 }
 
 .text-container {
-  width: calc(100% - #{$profile-image-size + 4 * 16px});
+  width: calc(100% - #{$profile-image-size + 4 * 10px});
   text-align: justify;
   padding: 0 13rem;
   font-family: $font-family;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-right: 0 2rem;
+  margin-right: -7rem;
+
 
 
 }
@@ -74,7 +75,7 @@ $profile-image-size: 350px;
 .aboutme-text {
   font-family: $font-family;
   font-size: $medium-font-size;
-  font-weight: bold;
+
 }
 
 @media screen and (max-width: 1024px) {
