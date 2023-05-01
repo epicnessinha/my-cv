@@ -25,6 +25,11 @@ $job-item-paragraph-line-height: 1.5;
   margin-left: 0.3rem;
   margin-right: 0.5rem;
 
+  &.dark-mode {
+    background-color: #56ccf2;
+    color: #fff;
+    opacity: 0.8;
+  }
 
   h3 {
     font-size: $job-item-heading-font-size;

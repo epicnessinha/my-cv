@@ -8,6 +8,7 @@ interface ExperienceItemProps {
   description: string;
   startDate: Date;
   school: string;
+  darkMode: boolean;
 }
 
 const Card: React.FC<ExperienceItemProps> = ({
@@ -16,6 +17,7 @@ const Card: React.FC<ExperienceItemProps> = ({
   description,
   startDate,
   school,
+  darkMode,
 }) => {
   const [elapsedTime, setElapsedTime] = useState("");
   const [expanded, setExpanded] = useState(false);
@@ -50,8 +52,8 @@ const Card: React.FC<ExperienceItemProps> = ({
   };
 
   return (
-    <div className="job-item">
-      <div className="job-item-header" onClick={handleExpandClick}>
+    <div className={`job-item${darkMode ? " dark-mode" : ""}`}>
+      <div className="job-item-header" onClick={handleExpandClick} data-testid="job-item-header">
         <h3>
           {title}{" "}
           {expanded ? (

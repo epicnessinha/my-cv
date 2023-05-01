@@ -1,36 +1,55 @@
-import React from "react";
-import { render, screen } from "@testing-library/react";
-import JobItem from "./Card";
+/* eslint-disable testing-library/no-render-in-setup */
+/* eslint-disable testing-library/prefer-screen-queries */
+import React from 'react';
+import { render, fireEvent, waitFor } from '@testing-library/react';
+import '@testing-library/jest-dom/extend-expect';
+import Card from './Card';
 
-describe("JobItem component", () => {
-  test("renders job item with the provided data", () => {
-    const testTitle = "Software Engineer";
-    const testCompany = "Test Company";
-    const testDescription = "Developing web applications";
-    const testStartDate = new Date(2020, 0, 1);
+describe('Card', () => {
+  const defaultProps = {
+    title: 'Frontend Developer',
+    company: 'XING',
+    description: 'Frontend Developer description',
+    startDate: new Date('2022-09-01'),
+    school: '',
+    darkMode: false,
+  };
 
-    render(
-      <JobItem
-        title={testTitle}
-        company={testCompany}
-        description={testDescription}
-        startDate={testStartDate} school={""}      />
-    );
+  let view: ReturnType<typeof render>;
 
-    // Check if the title, company, and description elements are rendered correctly
-    expect(screen.getByText(testTitle)).toBeInTheDocument();
-    expect(screen.getByText(`Company: ${testCompany}`)).toBeInTheDocument();
-    expect(screen.getByText(`Job Functions: ${testDescription}`)).toBeInTheDocument();
+  beforeEach(() => {
+    view = render(<Card {...defaultProps} />);
+  });
 
-    // Check if the "Started" text is rendered with the correct elapsed time
-    const now = new Date();
-    const diff = now.getTime() - testStartDate.getTime();
+  it('renders the card with the provided props', () => {
+    expect(view.getByText(defaultProps.title)).toBeInTheDocument();
+    expect(view.getByText(defaultProps.company)).toBeInTheDocument();
+    expect(view.getByText(/⌛/)).toBeInTheDocument();
+  });
 
-    const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365));
-    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  it('expands the card to show more details when clicked', async () => {
+    const expandButton = view.getByTestId('job-item-header');
 
-    const elapsedTimeText = `Started: ${years} years, ${hours} hours, and ${minutes} minutes ago`;
-    expect(screen.getByText(elapsedTimeText)).toBeInTheDocument();
+    fireEvent.click(expandButton);
+
+    await waitFor(() => {
+      expect(view.getByText(defaultProps.description)).toBeInTheDocument();
+    });
+  });
+
+  it('collapses the card when clicked again', async () => {
+    const expandButton = view.getByTestId('job-item-header');
+
+    fireEvent.click(expandButton);
+
+    await waitFor(() => {
+      expect(view.getByText(defaultProps.description)).toBeInTheDocument();
+    });
+
+    fireEvent.click(expandButton);
+
+    await waitFor(() => {
+      expect(view.queryByText(defaultProps.description)).not.toBeInTheDocument();
+    });
   });
 });
