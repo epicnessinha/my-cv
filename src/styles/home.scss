@@ -70,28 +70,24 @@ $home-container-paragraph-line-height: 1.5;
       letter-spacing: 1px;
     }
   }
-}
 
-// For devices with a screen size between 768px and 1024px (Tablet)
-@media screen and (max-width: 1024px) {
-  .home-container {
+  // For devices with a screen size smaller than 480px (Mobile)
+  @media screen and (max-width: 479px) {
     .text-content {
-      padding: 8rem;
+      padding: 1rem;
 
       h1 {
-        font-size: 3rem;
+        font-size: 2rem;
       }
 
       p {
-        font-size: 1rem;
+        font-size: 0.75rem;
       }
     }
   }
-}
 
-// For devices with a screen size between 480px and 768px (Small Tablet or Large Mobile)
-@media screen and (max-width: 768px) {
-  .home-container {
+  // For devices with a screen size between 480px and 767px (Small Tablet or Large Mobile)
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     .text-content {
       padding: 4rem;
 
@@ -104,20 +100,18 @@ $home-container-paragraph-line-height: 1.5;
       }
     }
   }
-}
 
-// For devices with a screen size smaller than 480px (Mobile)
-@media screen and (max-width: 480px) {
-  .home-container {
+  // For devices with a screen size between 768px and 1023px (Tablet)
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
     .text-content {
-      padding: 2rem;
+      padding: 8rem;
 
       h1 {
-        font-size: 2rem;
+        font-size: 3rem;
       }
 
       p {
-        font-size: 0.75rem;
+        font-size: 1rem;
       }
     }
   }
