@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'core-js/stable'
+import 'regenerator-runtime/runtime'
 import './styles/main.scss';
 import Layout from "../src/components/Layout/Layout"
 import { DarkModeProvider } from "./context/DarkModeContext"
