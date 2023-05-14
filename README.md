@@ -13,7 +13,7 @@ This Web-based CV have 3 pages, reusable components, a timer, dark mode, header 
 
 ## Visuals 
 
-<img src="https://github.com/epicnessinha/my-cv/blob/master/src/assets/img/Homepage.png?raw=true" alt="Homepage" width="45%"/> <img src="https://github.com/epicnessinha/my-cv/blob/master/src/assets/img/About%20me.png?raw=true" alt="About" width="45%"/> <img src="https://github.com/epicnessinha/my-cv/blob/master/src/assets/img/Experience.png?raw=true" alt="Experience" width="42%"/> <img src="https://github.com/epicnessinha/my-cv/blob/master/src/assets/img/Education.png?raw=true" alt="Education" width="45%"/> <img src="https://github.com/epicnessinha/my-cv/blob/master/src/assets/img/Contacts.png?raw=true" alt="Contacts" width="45%"/> <img src="https://github.com/epicnessinha/my-cv/blob/master/src/assets/img/portfolio.png?raw=true" alt="Portfolio" width="45%"/>
+<img src="https://github.com/epicnessinha/my-cv/blob/master/src/assets/img/Homepage.png?raw=true" alt="Homepage" width="45%"/> <img src="https://github.com/epicnessinha/my-cv/blob/master/src/assets/img/About%20me.png?raw=true" alt="About" width="45%"/> <img src="https://github.com/epicnessinha/my-cv/blob/master/src/assets/img/Experience.png?raw=true" alt="Experience" width="42%"/> <img src="https://github.com/epicnessinha/my-cv/blob/master/src/assets/img/Education.png?raw=true" alt="Education" width="45%"/> <img src="https://github.com/epicnessinha/my-cv/blob/master/src/assets/img/Contacts.png?raw=true" alt="Contacts" width="45%"/> 
 
 ## Instructions to use:
 
