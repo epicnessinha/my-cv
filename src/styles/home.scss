@@ -1,7 +1,6 @@
 // Home Container
 $home-container-font-size: 1rem;
 $home-container-heading-font-size: 10rem;
-$home-container-heading-font-weight: "";
 $home-container-heading-margin-bottom: 1.5rem;
 $home-container-paragraph-font-size: 2rem;
 $home-container-paragraph-font-weight: bold;
@@ -54,7 +53,7 @@ $home-container-paragraph-line-height: 1.5;
 
     h1 {
       font-size: $home-container-heading-font-size;
-      font-weight: $home-container-heading-font-weight;
+   
       margin-bottom: $home-container-heading-margin-bottom;
       font-family: "flor";
       letter-spacing: 3px;
@@ -115,4 +114,113 @@ $home-container-paragraph-line-height: 1.5;
       }
     }
   }
+}
+
+@-moz-document url-prefix() {
+  .home-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 90vh;
+    font-size: $home-container-font-size;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: auto;
+    background: linear-gradient(
+      to bottom,
+      rgba(166, 206, 241, 0.3) 0%,
+      rgba(103, 219, 232, 0.5) 95%,
+      #5a81ab1d 100%
+    ),
+    url("../assets/img/garage.jpeg");
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0%;
+      width: 50%;
+      height: 100%;
+      background: 
+        url("../assets/img/Nessa5.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 0;
+      border-radius: 0.3rem;
+    }
+  
+    .text-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 5rem;
+      text-align: center;
+  
+      h1 {
+        font-size: $home-container-heading-font-size;
+        margin-bottom: $home-container-heading-margin-bottom;
+        font-family: "flor";
+        margin-top: -2.5rem;
+        
+      }
+  
+      p {
+        font-size: $home-container-paragraph-font-size;
+        line-height: $home-container-paragraph-line-height;
+        font-family: "Dam";
+        letter-spacing: 1px;
+      }
+    }
+  
+    // For devices with a screen size smaller than 480px (Mobile)
+    @media screen and (max-width: 479px) {
+      .text-content {
+        padding: 1rem;
+  
+        h1 {
+          font-size: 2rem;
+        }
+  
+        p {
+          font-size: 0.75rem;
+        }
+      }
+    }
+  
+    // For devices with a screen size between 480px and 767px (Small Tablet or Large Mobile)
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      .text-content {
+        padding: 4rem;
+  
+        h1 {
+          font-size: 2.5rem;
+        }
+  
+        p {
+          font-size: 0.875rem;
+        }
+      }
+    }
+  
+    // For devices with a screen size between 768px and 1023px (Tablet)
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      .text-content {
+        padding: 8rem;
+  
+        h1 {
+          font-size: 3rem;
+        }
+  
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  } 
 }
