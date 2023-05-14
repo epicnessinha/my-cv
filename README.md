@@ -32,7 +32,7 @@ Follow this steps:
 
 ### 1. `npm start` 
 ### or
-### 2. Open [Netfly](https://githubdiscovery-vanessa.netlify.app/) on Google Chrome browser.
+### 2. Open [Netfly](https://vanessaferreira-cv.netlify.app/) on Google Chrome browser.
 
 Runs the app in the development mode.\
 Opens [http://localhost:3000](http://localhost:3000) to view it in your browser (Use Google Chrome)
