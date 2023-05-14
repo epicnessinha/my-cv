@@ -2,7 +2,6 @@
 
 ##  ⚠️ Currently under development! ⚠️
 - Media queries are not working as expected in mobile and tablet screens. Currently fixing it!
-- It's rendering a little bit unformatted on Firefox browser. Still need to find the issue and fix it too.
 
 For this challenge, was suggest the creation of a web-based curriculum vitae to show, in practice, the extent of my knowledge and abilities in TypeScript, React and Sass.<br/>
 It was my first time using TypeScript and Sass from strach in a project.<br/>
@@ -32,10 +31,10 @@ Follow this steps:
 
 ### 1. `npm start` 
 ### or
-### 2. Open [Netfly](https://vanessaferreira-cv.netlify.app/) on Google Chrome browser.
+### 2. Open [Netfly](https://vanessaferreira-cv.netlify.app/).
 
 Runs the app in the development mode.\
-Opens [http://localhost:3000](http://localhost:3000) to view it in your browser (Use Google Chrome)
+Opens [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### `npm test`
 
