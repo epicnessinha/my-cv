@@ -29,8 +29,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest",
-    "eject": "react-scripts eject",
-    "start:api": "nodemon src/API/sendEmail.ts"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
