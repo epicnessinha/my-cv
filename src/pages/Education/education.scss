@@ -2,8 +2,12 @@ $education-item-bg: #f0f0f0;
 $education-item-text-color: #000;
 $font-family: "futura";
 $background-darken-filter: brightness(80%);
+$education-container-padding: 2rem;
+$h2-font-size: 4rem;
+$education-item-max-width: 35rem;
+$education-item-margin-right: -40rem;
 
-.education-container {
+@mixin education-container-mixin {
   background-image: linear-gradient(
       to bottom,
       rgba(241, 166, 238, 0.25) 0%,
@@ -13,12 +17,16 @@ $background-darken-filter: brightness(80%);
     url("../../assets/img/wescolor.jpeg");
   background-size: cover;
   background-position: center bottom;
-  padding: 2rem;
+  padding: $education-container-padding;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 90vh;
+}
+
+.education-container {
+  @include education-container-mixin;
 
   &.dark {
     background-image: linear-gradient(
@@ -39,13 +47,13 @@ $background-darken-filter: brightness(80%);
   
 
   h2 {
-    font-size: 4rem;
+    font-size: $h2-font-size;
     font-weight: bold;
     margin-bottom: 5rem;
     margin-top: 2rem;
     font-family: $font-family;
     letter-spacing: 3px;
-    margin-right: -40rem;
+    margin-right: $education-item-margin-right;
   }
 
   .education-item {
@@ -55,10 +63,10 @@ $background-darken-filter: brightness(80%);
     padding: 1rem;
     margin-bottom: 1.5rem;
     width: 100%;
-    max-width: 35rem;
+    max-width: $education-item-max-width;
     box-shadow: 0 4px 6px rgba(165, 19, 19, 0.1);
     cursor: pointer;
-    margin-right: -50rem;
+    margin-right: $education-item-margin-right;
 
     .expandable {
       display: flex;
@@ -100,145 +108,117 @@ $background-darken-filter: brightness(80%);
 
 @-moz-document url-prefix() {
   .education-container {
-    background-image: linear-gradient(
-      to bottom,
-      rgba(241, 166, 238, 0.25) 0%,
-      rgba(232, 103, 232, 0.094) 85%,
-      #282028da 100%
-    ),
-    url("../../assets/img/wescolor.jpeg");
-  background-size: cover;
-  background-position: center bottom;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 90vh;
-
-  &.dark {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.3),
-        rgba(0, 0, 0, 0.5)
-      ),
-      url("../../assets/img/wescolor.jpeg");
-    filter: $background-darken-filter;
-  }
-
-  &.dark-mode {
-    --education-item-bg: #56ccf2;
-    --education-item-text-color: #fff;
-    filter: $background-darken-filter;
-    opacity: 0.8;
-  }
-  
-
-  h2 {
-    font-size: 4rem;
-    font-weight: bold;
-    margin-bottom: 5rem;
-    margin-top: 2rem;
-    font-family: $font-family;
-    letter-spacing: 3px;
-    margin-right: -30rem;
-  }
-  .education-item {
-    background-color: #f5b5edb4;
-    color: $education-item-text-color;
-    border-radius: 1.5rem;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    width: 100%;
-    max-width: 35rem;
-    box-shadow: 0 4px 6px rgba(165, 19, 19, 0.1);
-    cursor: pointer;
-    margin-right: -40rem;
-
-    .expandable {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      h3 {
-        font-size: 1.5rem;
-        font-weight: 600;
-        margin-bottom: 0.5rem;
-      }
-
-      .timer {
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1.5;
-      }
-
-      .expand-icon {
-        font-size: 1.5rem;
-        margin-left: auto;
-      }
-    }
-
-    .description {
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.5;
-      display: none;
-    }
-
-    &.expanded {
-      .description {
-        display: block;
-      }
+    @include education-container-mixin;
+   
+    h2 {
+      margin-right: -30rem;
     }
   }
-  }
-
-  
 }
 
 
 
+@media screen and (max-width: 1280px) and (max-height: 950px) {
+  .education-container {
+    padding: 1.5rem;
+
+    h2 {
+      font-size: 4rem;
+      margin-right: -15rem;
+    }
+
+    .education-item {
+      max-width: 30rem;
+      margin-right: -30rem;
+      
+      .expandable {
+        h3 {
+          font-size: 1.3rem;
+        }
+
+        .timer {
+          font-size: 0.9rem;
+        }
+
+        .expand-icon {
+          font-size: 1.3rem;
+        }
+      }
+
+      .description {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 310px) and (max-width: 900px) {
+  .education-container {
+    padding: 1rem;
+
+    h2 {
+      font-size: 2rem;
+      margin-right: 0rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .education-item {
+      max-width: 25rem;
+      margin-right: 0rem;
+      
+      .expandable {
+        h3 {
+          font-size: 1.2rem;
+        }
+
+        .timer {
+          font-size: 0.8rem;
+        }
+
+        .expand-icon {
+          font-size: 1.2rem;
+        }
+      }
+
+      .description {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
 
 
-
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 810px) and (max-width: 1080px) {
   .education-container {
     padding: 1.5rem;
 
     h2 {
       font-size: 3rem;
+      margin-right: 0rem;
     }
 
     .education-item {
       max-width: 30rem;
-    }
-  }
-}
+      margin-right: 0rem;
+      
+      .expandable {
+        h3 {
+          font-size: 1.3rem;
+        }
 
-@media screen and (max-width: 768px) {
-  .education-container {
-    padding: 1rem;
+        .timer {
+          font-size: 0.9rem;
+        }
 
-    h2 {
-      font-size: 2.5rem;
-    }
+        .expand-icon {
+          font-size: 1.3rem;
+        }
+      }
 
-    .education-item {
-      max-width: 25rem;
-    }
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .education-container {
-    padding: 0.5rem;
-
-    h2 {
-      font-size: 2rem;
-    }
-
-    .education-item {
-      max-width: 20rem;
+      .description {
+        font-size: 0.9rem;
+      }
     }
   }
 }
