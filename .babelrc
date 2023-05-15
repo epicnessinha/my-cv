@@ -6,3 +6,7 @@
     ]
   }
   
+
+  //Babel é um transpilador JavaScript muito popular usado para converter código ECMAScript 2015+ (ES6+) 
+  //em uma versão de JavaScript compatível com versões mais antigas de navegadores ou ambientes. 
+  //Também é usado para transpilar JSX e TypeScript para JavaScript.
