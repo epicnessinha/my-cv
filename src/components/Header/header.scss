@@ -11,12 +11,24 @@ $dark-mode-button-text-color: #f1f1f1;
 $dark-mode-button-text-color-active: black;
 $dark-mode-button-hover-bg: #605c5c;
 $dark-mode-button-hover-bg-active: #73cbf4;
+$font-size: 1.5rem;
+$padding: 2rem 1.5rem;
 
-.header {
+%header-common {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 1.5rem;
+  padding: $padding;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: $font-size;
+  border-bottom: 5px solid rgb(9, 9, 9);
+}
+
+.header {
+  @extend %header-common;
+  background-color: $header-bg-light;
   background-image: linear-gradient(
       to bottom,
       rgba(166, 206, 241, 0.954) 0%,
@@ -24,12 +36,6 @@ $dark-mode-button-hover-bg-active: #73cbf4;
       #eeeaed5c 100%
     ),
     url("../../assets/img/wall.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: $header-bg-light;
-  font-size: 1.5rem;
-  border-bottom: 5px solid rgb(9, 9, 9);
 
   &.dark {
     background-color: $header-bg-dark;
@@ -131,6 +137,7 @@ $dark-mode-button-hover-bg-active: #73cbf4;
 
   @-moz-document url-prefix() {
     .header {
+      @extend %header-common;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -174,7 +181,7 @@ $dark-mode-button-hover-bg-active: #73cbf4;
         margin-right: 2rem;
         transition: color 0.3s ease;
         font-family: "Wes";
-        font-size: 1.4rem;
+        font-size: 1.35rem;
         font-weight: bold;
     
         &.nav-link-dark {
@@ -231,6 +238,7 @@ $dark-mode-button-hover-bg-active: #73cbf4;
           @media screen and (max-width: 828px) {
             margin-left: 4rem;
             margin-right: -6rem;
+         
           }
     
         
@@ -240,13 +248,96 @@ $dark-mode-button-hover-bg-active: #73cbf4;
             margin-top: 1rem;
             flex-direction: column;
             align-items: flex-start;
+           
           }
       
           @media screen and (max-width: 480px) {
             margin-top: 0.5rem;
+        
           }
         }
       }
 
   }
   
+
+
+@media screen and (min-width: 810px) and (max-width: 1080px) {
+  .header {
+    padding: 1.5rem 1rem;
+    font-size: 1.4rem;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    a,
+    .nav-link-dark {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+      font-size: 1.4rem;
+    }
+
+    .dark-mode-button {
+      padding: 0.4rem 0.8rem;
+    }
+
+    .nav-links {
+      margin-left: 6rem;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 900px) {
+  .header {
+    padding: 1rem 0.8rem;
+    font-size: 1.2rem;
+    margin-right: 6rem;
+   
+
+    h1 {
+      font-size: 1.2rem;
+    }
+
+    a,
+    .nav-link-dark {
+      margin-left: 0rem;
+      margin-right: 0rem;
+      font-size: 1.1rem;
+    }
+
+    .dark-mode-button {
+      display: none;
+    }
+
+    .nav-links {
+      margin-left: 5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 950px) {
+  .header {
+    padding: 2.5rem 2rem;
+    font-size: 1.8rem;
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    a,
+    .nav-link-dark {
+      margin-left: 2.5rem;
+      margin-right: 2.5rem;
+      font-size: 1.8rem;
+    }
+
+    .dark-mode-button {
+      padding: 0.6rem 1.2rem;
+    }
+
+    .nav-links {
+      margin-left: 8rem;
+    }
+  }
+}
