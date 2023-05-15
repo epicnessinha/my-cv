@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
 
    return (
       <footer className={`footer ${darkMode ? "dark" : ""}`}>
-         <p className="text">Vanessa Ferreira, 2023. All Rights Reserved.</p>
+         <p className="text">Vanessa Ferreira, {new Date().getFullYear()}. All Rights Reserved.</p>
          <button
   className={`dark-mode-button${darkMode ? " active" : ""}`}
   onClick={toggleDarkMode}
