@@ -1,7 +1,7 @@
 # Web-based CV (Code Challenge)
 
 ##  ⚠️ Currently under development! ⚠️
-- Media queries are not working as expected in mobile and tablet screens. Currently fixing it!
+- Media queries of the header are not working as expected in mobile screens. Currently fixing it!
 
 For this challenge, was suggest the creation of a web-based curriculum vitae to show, in practice, the extent of my knowledge and abilities in TypeScript, React and Sass.<br/>
 It was my first time using TypeScript and Sass from strach in a project.<br/>
